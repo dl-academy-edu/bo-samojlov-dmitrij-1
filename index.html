@@ -24,13 +24,17 @@
    </header>
 
    <main>
-         <h1 class="visually hidden">Design Life Kids</h1>
-
          <section class="main-theme">
-            <h2>the oh noo collection</h2>
+            <h1>the oh noo collection</h1>
             <p>01</p>
+            <ul class="main-theme-menu">
+               <li class="main-theme-menu-item"><div></div></li>
+               <li class="main-theme-menu-item"><div></div></li>
+               <li class="main-theme-menu-item"><div></div></li>
+               <li class="main-theme-menu-item"><div></div></li>
+            </ul>  
             <P>Designed in Slovenia</P>
-            <a href="#" class="button">explore now</a>
+            <button class="btn">explore now</button>
             <img src="img/alien_toy.jpg"  alt="alien toy">
             <P>Free (continental) USA shipping on all orders of $100 USD or more!</P>
          </section>
@@ -43,8 +47,8 @@
                <li class="products-list-item"><img src="img/toys.png" alt="deer"><p>toys</p></li>
                <li class="products-list-item"><img src="img/accessories.png" alt="skater"><p>accessories</p></li>
             </ul>
-            <a href="#" class="arrow-btn"><img src="img/left_arrow.png" alt="arrow"></a>
-            <a href="#" class="arrow-btn"><img src="img/right_arrow.png" alt="arrow"></a>
+            <button class="arrow-btn"><img src="img/left_arrow.png" alt="arrow"></button>
+            <button class="arrow-btn"><img src="img/right_arrow.png" alt="arrow"></button>
             <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
          </section>
 
@@ -58,7 +62,7 @@
             </ul>
             <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
             <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a href="#" class="button">learn more</a>
+            <button class="btn">learn more</button>
          </section>
 
          <article class="partners">
@@ -75,7 +79,7 @@
             <h2>design life kids</h2>
             <p>About Us</p>
             <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <a href="#" class="button">buy now</a>
+            <button class="btn">buy now</button>
          </section>
 
          <section class="contacts">
@@ -110,8 +114,11 @@
                <li class="footer-additional-list-item"><a href="#">Search</a></li>
             </ul>
 
-            <p><textarea placeholder="Email"></textarea></p>
-            <a href="#" class="button">join</a>
+            <form action="submit">
+                  <label></label>
+                  <input type="text">
+                  <button>Join</button>
+            </form>
 
             <ul class="footer-social-list">
                <li class="footer-social-list-item"><a href="#"><img src="img/facebook.svg"  alt="facebook"></a></li>
@@ -121,6 +128,19 @@
             </ul>
 
             <p>Company Rating</p>
+            <div class="rating-area">
+               <input type="radio" id="star-5" name="rating" value="5">
+               <label for="star-5" title="rating «5»"></label>	
+               <input type="radio" id="star-4" name="rating" value="4">
+               <label for="star-4" title="rating «4»"></label>    
+               <input type="radio" id="star-3" name="rating" value="3">
+               <label for="star-3" title="rating «3»"></label>  
+               <input type="radio" id="star-2" name="rating" value="2">
+               <label for="star-2" title="rating «2»"></label>    
+               <input type="radio" id="star-1" name="rating" value="1">
+               <label for="star-1" title="rating «1»"></label>
+            </div>
+
             <p>Copyright © 2018 Dlk • Design Life Kids</p>
             <p>Web Design — Direct Line Development</p>
    </footer>
