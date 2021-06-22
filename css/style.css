@@ -28,7 +28,7 @@ justify-content: flex-end;
 }
 .rating-area > input:checked ~ label {
 	color: #7b6968;
-	text-shadow: 1px 1px #c60;
+	text-shadow: 1px 1px #7b6968;
 }
 .rating-area:not(:checked) > label:hover,
 .rating-area:not(:checked) > label:hover ~ label {
