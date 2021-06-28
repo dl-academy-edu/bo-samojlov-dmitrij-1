@@ -40,18 +40,14 @@
       </section>
 
       <form name="form" action="#" method="post">
-         <p>
-            <div class="titles">Name</div><input class="input" name="name" type="text" />
-         </p>
-         <p>
-            <div class="titles">Phone</div><input class="input" name="phone" type="text" />
-         </p>
-         <p>
-            <div class="titles">Email</div><input class="input" name="email" type="text" />
-         </p>
-         <p>
-            <div class="titles">Message</div><textarea name="message" cols="22" rows="5"></textarea>
-         </p>
+         <label for="name">Name</label>
+         <input class="input" name="name" type="text" id="name" />
+         <label for="phone">Phone</label>
+         <input class="input" name="phone" type="text" id="phone" />
+         <label for="email">Email</label>
+         <input class="input" name="email" type="text" id="email" />
+         <label for="message">Message</label>
+         <textarea name="message" cols="22" rows="5" id="message"></textarea>
          <p><input checked type="checkbox" name="info" value="">By clicking on the button, you consent to the processing
             of your personal data</p>
          <button class="submit-btn" type="submit">submit</button>
