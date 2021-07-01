@@ -21,7 +21,7 @@
             <li class="header-navigation-item"><a href="#">About Us</a></li>
          </ul>
          <div class="contact-us">
-            <button type="button"><img src="../../img/glass.svg" alt="glass" width="17,2" height="17,58"></button>
+            <button type="button"><img src="../../img/glass.svg" alt="glass" width="17" height="17"></button>
             <a href="../contacts/index.html">
                <p>contact us</p>
             </a>
@@ -32,92 +32,102 @@
    <main>
       <section class="toys">
          <h1 class="toys-for-kids">toys for kids</h1>
-         <ol class="breadcrumbs">
+         <ul class="breadcrumbs">
             <li class="breadcrumbs-item"><a href="../../index.html">Home</a></li>
             <li class="breadcrumbs-item"><a href="./index.html">Catalog</a></li>
             <li class="breadcrumbs-item-active">Toys</li>
-         </ol>
+         </ul>
       </section>
 
-      <section class="filtr">
+      <form class="filtr" action="#" method="post">
+         <fieldset class="coast">
+            <legend>Coast</legend>
+            <input type="range" min="0" max="500" value="150" class="slider" aria-label="coast-slide">
+            <div class="slider-value">
+               <p>0</p>
+               <p>500</p>
+            </div>
+         </fieldset>
 
-         <div class="slidecontainer">
-            <h2>Cost</h2>
-            <input type="range" min="0" max="500" value="150" class="slider">
-         </div>
+         <fieldset class="color">
+            <legend>Color</legend>
+            <input checked type="checkbox" name="black" value="black" id="black-color">
+            <label for="black-color">Black</label>
+            <input type="checkbox" name="blue" value="blue" id="blue-color">
+            <label for="blue-color">Blue</label>
+            <input type="checkbox" name="green" value="green" id="green-color">
+            <label for="green-color">Green</label>
+            <input type="checkbox" name="white" value="white" id="white-color">
+            <label for="white-color">White</label>
+         </fieldset>
 
-         <div class="color">
-            <h2>Color</h2>
-            <p><input checked type="checkbox" name="Black" value="">Black</p>
-            <p><input type="checkbox" name="Blue" value="">Blue</p>
-            <p><input type="checkbox" name="Green" value="">Green</p>
-            <p><input type="checkbox" name="White" value="">White</p>
-         </div>
-      </section>
+         <fieldset class="delivery">
+            <legend>Delivery</legend>
+            <input type="radio" name="shipping" value="free" id="free-shipping">
+            <label for="free-shipping">free shipping</label>
+            <input checked type="radio" name="shipping" value="fast" id="fast-shipping">
+            <label for="fast-shipping">fast shipping</label>
+         </fieldset>
 
-      <section class="delivery">
-         <h2>Delivery</h2>
-         <p><input type="radio" name="shipping" value="free">free shipping</p>
-         <p><input checked type="radio" name="shipping" value="fast">fast shipping</p>
-      </section>
-
-      <section class="amount">
-         <h2>Amount</h2>
-         <div class="amount-list">
-            <p class="amount-list-item"><input checked type="radio" name="quantity" value="">0-10</p>
-            <p class="amount-list-item"><input type="radio" name="quantity" value="">10-20</p>
-            <p class="amount-list-item"><input type="radio" name="quantity" value="">20-50</p>
-         </div>
+         <fieldset class="amount">
+            <legend>Amount</legend>
+            <input checked type="radio" name="quantity" value="0-10" id="0-10">
+            <label for="0-10">0-10</label>
+            <input type="radio" name="quantity" value="10-20" id="10-20">
+            <label for="10-20">10-20</label>
+            <input type="radio" name="quantity" value="20-50" id="20-50">
+            <label for="20-50">20-50</label>
+         </fieldset>
 
          <button type="button" class="apply">apply</button>
-      </section>
+      </form>
 
-      <section class="product">
+      <div class="product">
          <ul class="product-list">
             <li class="product-list-item">
                <article class="product-card">
                   <img src="../../img/puff_shark.png" alt="shark-bag" width="380" height="385">
-                  <h3>sharky bean bag chair cover</h3>
+                  <h2>sharky bean bag chair cover</h2>
                   <span class="price">&dollar;60.00 USD</span>
                </article>
             </li>
             <li class="product-list-item">
                <article class="product-card">
                   <img src="../../img/brass.png" alt="brass" width="380" height="385">
-                  <h3>brass deco frames</h3>
+                  <h2>brass deco frames</h2>>
                   <span class="price">&dollar;66.00 USD</span>
                </article>
             </li>
             <li class="product-list-item">
                <article class="product-card">
                   <img src="../../img/cibo.png" alt="cibo" width="380" height="385">
-                  <h3>cibo full apron</h3>
+                  <h2>cibo full apron</h2>>
                   <span class="price">&dollar;60.00 USD</span>
                </article>
             </li>
             <li class="product-list-item">
                <article class="product-card">
                   <img src="../../img/bubblegum_machine.png" alt="bubblegum-machine" width="380" height="385">
-                  <h3>gatcha gatcha gumball machine</h3>
+                  <h2>gatcha gatcha gumball machine</h2>>
                   <span class="price">&dollar;56.00 USD</span>
                </article>
             </li>
             <li class="product-list-item">
                <article class="product-card">
                   <img src="../../img/candle.png" alt="candle" width="380" height="385">
-                  <h3>christmas advent scented candle</h3>
+                  <h2>christmas advent scented candle</h2>>
                   <span class="price">&dollar;29.00 USD</span>
                </article>
             </li>
             <li class="product-list-item">
                <article class="product-card">
                   <img src="../../img/tangle_light.png" alt="tangle-light" width="380" height="382">
-                  <h3>tangle spinning tea light</h3>
+                  <h2>tangle spinning tea light</h2>>
                   <span class="price">&dollar;56.00 USD</span>
                </article>
             </li>
          </ul>
-      </section>
+      </div>>
 
       <div class="pagination">
          <button type="button" class="arrow-btn"><img src="../../img/left_arrow.svg" alt="arrow" width="13"
@@ -195,8 +205,8 @@
                <label for="star-1" title="rating «1»"></label>
             </div>
          </div>
-         <p>Copyright © 2018 Dlk • Design Life Kids</p>
-         <p>Web Design — Direct Line Development</p>
+         <p><a href="../../index.html">Copyright © 2018 Dlk • Design Life Kids</a></p>
+         <p><a href="https://directline.digital/">Web Design — Direct Line Development</a></p>
       </div>
    </footer>
 </body>
