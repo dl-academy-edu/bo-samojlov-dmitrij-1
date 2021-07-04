@@ -227,7 +227,7 @@ a:focus {
 
 /* Delivery */
 
-.delivery-list-item a {
+.delivery-list-item-link {
   font-family: 'Crimson Text', serif;
   font-style: italic;
   font-weight: normal;
@@ -236,8 +236,8 @@ a:focus {
   color: #1E0606;
 }
 
-.delivery-list-item a:hover,
-a:focus {
+.delivery-list-item-link:hover,
+.delivery-list-item-link:focus {
   font-weight: bold;
   background-color: rgba(112, 187, 220, 0.2);
 }
@@ -594,7 +594,8 @@ input:focus {
   top: 573px;
 }
 
-.submit-btn:hover, .submit-btn:focus {
+.submit-btn:hover,
+.submit-btn:focus {
   background: #C29974;
 }
 

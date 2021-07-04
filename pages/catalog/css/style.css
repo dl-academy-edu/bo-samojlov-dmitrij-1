@@ -117,7 +117,7 @@ h1 {
   color: #1E0606;
 }
 
-.bredcrumbs-item {
+.bredcrumbs-item a {
   font-family: 'Crimson Text', serif;
   font-style: italic;
   font-weight: normal;
@@ -126,12 +126,12 @@ h1 {
   color: #1E0606;
 }
 
-.bredcrumbs-item:hover,
-.bredcrumbs-item:focus {
+.bredcrumbs-item a:hover,
+.bredcrumbs-item a:focus {
   opacity: 0.5;
 }
 
-.bredcrumbs-item:active {
+.bredcrumbs-item a:active {
   opacity: 0.3;
 }
 
@@ -141,6 +141,7 @@ h1 {
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
+  opacity: 0.5;
 }
 
 .category-list-item a {
@@ -155,8 +156,7 @@ h1 {
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-.category-list-item a:hover,
-a:focus {
+.category-list-item-link:hover, .category-list-item-link:focus {
   text-decoration: underline;
   cursor: pointer;
 }
