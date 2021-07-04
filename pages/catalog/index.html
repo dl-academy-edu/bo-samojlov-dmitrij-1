@@ -7,24 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../css/normalize.css" rel="stylesheet">
   <link href="../catalog/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <title>Catalog</title>
 </head>
 
 <body>
 
   <header>
-    <a href="../../index.html"><img src="../../img/logo.svg" alt="Design Life Kids" width="100" height="52"></a>
+    <a class="logo-link" href="../../index.html"><img src="../../img/logo.svg" alt="Design Life Kids" width="100"
+        height="52"></a>
     <nav class="header-nav">
       <ul class="header-navigation">
-        <li class="header-navigation-item"><a href="../blog/index.html">Blog</a></li>
-        <li class="header-navigation-item"><a href="#">Catalog</a></li>
-        <li class="header-navigation-item"><a href="#">About Us</a></li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="../blog/index.html">Blog</a>
+        </li>
+        <li class="header-navigation-item-active"><p>Catalog</p></li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="#">About Us</a></li>
       </ul>
       <div class="contact-us">
-        <button type="button"><img src="../../img/glass.svg" alt="glass" width="17" height="17"></button>
-        <a href="../contacts/index.html">
-          <p>contact us</p>
-        </a>
+        <button class="search-btn" type="button"><img src="../../img/glass.svg" alt="glass" width="17"
+            height="17"></button>
+        <a class="contact-us-link" href="../contacts/index.html">contact us</a>
       </div>
     </nav>
   </header>
@@ -41,27 +47,27 @@
       <ul class="category-list">
         <li class="category-list-item"><a href="#"><img src="../../img/apparel_kids.png" alt="sweater" width="244"
               height="177">
-            <p>apparel kids</p>
+            apparel kids
           </a></li>
         <li class="category-list-item"><a href="#"><img src="../../img/holiday_shop.png" alt="holiday-sock" width="208"
               height="244">
-            <p>holiday shop</p>
+            holiday shop
           </a></li>
         <li class="category-list-item"><a href="./detail.html"><img src="../../img/toys.png" alt="deer" width="270"
               height="270">
-            <p>toys</p>
+            toys
           </a></li>
         <li class="category-list-item"><a href="#"><img src="../../img/accessories.png" alt="skater" width="240"
               height="250">
-            <p>accessories</p>
+            accessories
           </a></li>
         <li class="category-list-item"><a href="#"><img src="../../img/sale.png" alt="flamingo" width="248"
               height="248">
-            <p>sale</p>
+            sale
           </a></li>
         <li class="category-list-item"><a href="#"><img src="../../img/apparel_adults.png" alt="dress" width="271"
               height="204">
-            <p>apparel adults</p>
+            apparel adults
           </a></li>
       </ul>
     </section>
@@ -109,7 +115,7 @@
       <form action="#">
         <label for="email"></label>
         <input type="text" id="email" placeholder="Email">
-        <button type="submit">Join</button>
+        <button class="join-btn" type="submit">Join</button>
       </form>
 
       <ul class="footer-social-list">
@@ -140,8 +146,8 @@
           <label for="star-1" title="rating «1»"></label>
         </div>
       </div>
-      <p><a href="../../index.html">Copyright © 2018 Dlk • Design Life Kids</a></p>
-      <p><a href="https://directline.digital/">Web Design — Direct Line Development</a></p>
+      <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a class="dl-link" href="https://directline.digital/">Web Design — Direct Line Development</a>
     </div>
   </footer>
 </body>
