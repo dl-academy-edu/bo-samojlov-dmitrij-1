@@ -76,6 +76,10 @@ li {
 
 /* Main Theme Slider */
 
+.main-theme {
+  background: #EEE4DB;
+}
+
 .slide-counter {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -83,6 +87,20 @@ li {
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
+}
+
+.main-theme-menu-button-head {
+  width: 31px;
+  height: 3px;
+  left: 141px;
+  top: 346px;
+  border: none;
+  outline: none;
+  background-color: rgba(30, 6, 6, 0.6);
+}
+
+.main-theme-menu-button-head:hover {
+  cursor: pointer;
 }
 
 .main-theme-menu-button {
@@ -95,9 +113,19 @@ li {
   background-color: #D6CAC2;
 }
 
-.main-theme-menu-button:hover {
+.main-theme-menu-button:hover,
+.main-theme-menu-button:focus {
   background-color: rgba(30, 6, 6, 0.6);
   cursor: pointer;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  color: #1E0606;
 }
 
 .slide-heading {
@@ -159,6 +187,7 @@ li {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  background: #C29974;
 }
 
 .hidden {
@@ -179,7 +208,7 @@ h2 {
 
 /* Category Products */
 
-.products-list-item a {
+.products-list-item-link-text {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -191,13 +220,13 @@ h2 {
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-.products-list-item a:hover,
-a:focus {
+.products-list-item-link-text:hover,
+.products-list-item-link-text:focus {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.catalog p {
+.product-description {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -242,7 +271,7 @@ a:focus {
   background-color: rgba(112, 187, 220, 0.2);
 }
 
-.delivery p {
+.delivery-description {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -284,6 +313,10 @@ a:focus {
 }
 
 /* About Us */
+
+.about-us {
+  background: #E1F0F7;
+}
 
 .about-heading {
   font-family: 'Crimson Text', serif;
@@ -337,7 +370,11 @@ a:focus {
 
 /* Contacts */
 
-.contacts p {
+.contacts {
+  background: #E1F0F7;
+}
+
+.contacts-info {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -461,6 +498,15 @@ input:focus {
 }
 
 /* social list */
+
+.footer-social-list-item:hover,
+.footer-social-list-item:focus {
+  opacity: 0.5;
+}
+
+.footer-social-list-item:active {
+  opacity: 0.3;
+}
 
 /* additional info */
 
