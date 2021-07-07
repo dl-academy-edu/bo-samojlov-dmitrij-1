@@ -2,6 +2,37 @@ body {
   max-width: 1400px;
   padding: 0 110px;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1400px;
+  padding: 0 110px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+:focus,
+:hover,
+:disabled {
+  outline: none;
+}
+
+:active {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 /* rating stars */
