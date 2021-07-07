@@ -619,7 +619,6 @@ input:focus {
 .popup input:disabled {
   background: #FFFFFF;
   border: 2px solid #EBEBEB;
-  box-sizing: border-box;
 }
 
 .submit-btn {

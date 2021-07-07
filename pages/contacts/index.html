@@ -7,24 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../css/normalize.css" rel="stylesheet">
   <link href="../contacts/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <title>Contacts</title>
 </head>
 
 <body>
 
   <header>
-    <a href="../../index.html"><img src="../../img/logo.svg" alt="Design Life Kids" width="100" height="52"></a>
+    <a class="logo-link" href="../../index.html"><img src="../../img/logo.svg" alt="Design Life Kids" width="100"
+        height="52"></a>
     <nav class="header-nav">
       <ul class="header-navigation">
-        <li class="header-navigation-item"><a href="../blog/index.html">Blog</a></li>
-        <li class="header-navigation-item"><a href="../catalog/index.html">Catalog</a></li>
-        <li class="header-navigation-item"><a href="#">About Us</a></li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="../blog/index.html">Blog</a>
+        </li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="../catalog/index.html">Catalog</a>
+        </li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="#">About Us</a></li>
       </ul>
       <div class="contact-us">
-        <button type="button"><img src="../../img/glass.svg" alt="glass" width="17" height="17"></button>
-        <a href="#">
-          <p>contact us</p>
-        </a>
+        <button class="search-btn" type="button"><img src="../../img/glass.svg" alt="glass" width="17"
+            height="17"></button>
+        <p class="active-page">contact us</p>
       </div>
     </nav>
   </header>
@@ -34,12 +41,12 @@
     <section class="heading">
       <h1>contact us</h1>
       <ul class="breadcrumbs">
-        <li class="breadcrumbs-item"><a href="../../index.html">Home</a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../../index.html">Home</a></li>
         <li class="breadcrumbs-item-active">Contact Us</li>
       </ul>
     </section>
 
-    <form name="form" action="#" method="post">
+    <form class="contact-form" name="form" action="#" method="post">
       <fieldset>
         <label for="name">Name</label>
         <input class="input" name="name" type="text" id="name" />
@@ -48,7 +55,7 @@
         <label for="contact-email">Email</label>
         <input class="input" name="email" type="text" id="contact-email" />
         <label for="message">Message</label>
-        <textarea name="message" cols="22" rows="5" id="message"></textarea>
+        <input name="message" type="text" id="message"></input>
         <input checked type="checkbox" name="info" id="agree" value="">
         <label for="agree">By clicking on the button, you
           consent to the
@@ -59,10 +66,10 @@
     </form>
 
     <div class="info">
-      <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
-      <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
+      <p class="info-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+      <p class="info-text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
       </p>
-      <p class="uppercase">an expert is waiting to help you!</p>
+      <p class="uppercase-text">an expert is waiting to help you!</p>
     </div>
 
   </main>
@@ -97,7 +104,7 @@
       <form action="#">
         <label for="email"></label>
         <input type="text" id="email" placeholder="Email">
-        <button type="submit">Join</button>
+        <button class="join-btn" type="submit">Join</button>
       </form>
 
       <ul class="footer-social-list">
@@ -114,8 +121,7 @@
 
     <div class="additional-info">
       <div class="company-rating">
-        <p>Company Rating</p>
-
+        <p class="rate">Company Rating</p>
         <div class="rating-area">
           <input type="radio" id="star-5" name="rating" value="5">
           <label for="star-5" title="rating «5»"></label>
@@ -130,8 +136,8 @@
         </div>
       </div>
 
-      <p><a href="../../index.html">Copyright © 2018 Dlk • Design Life Kids</a></p>
-      <p><a href="https://directline.digital/">Web Design — Direct Line Development</a></p>
+      <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a class="dl-link" href="https://directline.digital/">Web Design — Direct Line Development</a>
     </div>
   </footer>
 </body>
