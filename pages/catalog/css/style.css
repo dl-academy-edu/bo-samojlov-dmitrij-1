@@ -117,7 +117,7 @@ h1 {
   color: #1E0606;
 }
 
-.bredcrumbs-item a {
+.bredcrumbs-item-link {
   font-family: 'Crimson Text', serif;
   font-style: italic;
   font-weight: normal;
@@ -126,12 +126,12 @@ h1 {
   color: #1E0606;
 }
 
-.bredcrumbs-item a:hover,
-.bredcrumbs-item a:focus {
+.bredcrumbs-item-link:hover,
+.bredcrumbs-item-link:focus {
   opacity: 0.5;
 }
 
-.bredcrumbs-item a:active {
+.bredcrumbs-item-link:active {
   opacity: 0.3;
 }
 
@@ -144,7 +144,7 @@ h1 {
   opacity: 0.5;
 }
 
-.category-list-item a {
+.category-list-item-link-text {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -156,7 +156,8 @@ h1 {
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-.category-list-item-link:hover, .category-list-item-link:focus {
+.category-list-item-link-text:hover,
+.category-list-item-link-text:focus {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -171,7 +172,7 @@ h2 {
   color: #1E0606;
 }
 
-.description p {
+.description-text {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -295,6 +296,15 @@ input:focus {
 }
 
 /* social list */
+
+.footer-social-list-item:hover,
+.footer-social-list-item:focus {
+  opacity: 0.5;
+}
+
+.footer-social-list-item:active {
+  opacity: 0.3;
+}
 
 /* additional info */
 
