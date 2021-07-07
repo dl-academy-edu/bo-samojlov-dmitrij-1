@@ -35,6 +35,133 @@ li {
   border-bottom: none;
 }
 
+/* header */
+
+.logo-link:hover,
+.logo-link:focus {
+  opacity: 0.5;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
+.header-navigation-link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.header-navigation-link:hover,
+.header-navigation-link:focus {
+  opacity: 0.5;
+}
+
+.header-navigation-link:active {
+  opacity: 0.3;
+}
+
+.contact-us:hover,
+.contact-us:focus {
+  opacity: 0.5;
+}
+
+.contact-us:active {
+  opacity: 0.3;
+}
+
+.search-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.contact-us-link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+/* main */
+
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.breadcrumbs-item-link {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.breadcrumbs-item-link:hover,
+.breadcrumbs-item-link:focus {
+  opacity: 0.5;
+}
+
+.breadcrumbs-item-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-item-active {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+/* news block */
+
+.news-date {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #818181;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1E0606;
+}
+
+h2:hover, h2:focus {
+  text-decoration: underline;
+}
+
+.news-content {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
 /* rating stars */
 .rating-area {
   display: flex;
