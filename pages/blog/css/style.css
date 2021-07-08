@@ -93,7 +93,7 @@ li {
 /* main */
 
 h1 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -141,7 +141,7 @@ h1 {
 }
 
 h2 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -149,12 +149,13 @@ h2 {
   color: #1E0606;
 }
 
-h2:hover, h2:focus {
+h2:hover,
+h2:focus {
   text-decoration: underline;
 }
 
 .news-content {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -162,7 +163,173 @@ h2:hover, h2:focus {
   color: #1E0606;
 }
 
+/* pagination */
+
+.pagination-list-item-link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.pagination-list-item-link:hover,
+.pagination-list-item-link:focus {
+  color: #C29974;
+}
+
+.arrow-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* footer */
+
+footer {
+  background-color: #434343;
+}
+
+/* h3 font style */
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA;
+}
+
+/* footer navigation */
+
+.footer-navigation-item-link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.footer-navigation-item-link:hover,
+a:focus {
+  opacity: 0.5;
+}
+
+.footer-navigation-item-link:active {
+  opacity: 0.2;
+}
+
+/* customer info */
+
+.footer-additional-list-item a {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.footer-additional-list-item a:hover,
+a:focus {
+  opacity: 0.5;
+}
+
+.footer-additional-list-item a:active {
+  opacity: 0.2;
+}
+
+/* connect */
+
+.connect input {
+  Width: 380px;
+  Height: 40px;
+  Top: 171px;
+  Left: 910px;
+  background-color: #666666;
+}
+
+.connect input:hover,
+input:focus {
+  border: solid 1px #FFFFFF;
+}
+
+.connect input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #EBEBEB;
+  background-color: #666666;
+}
+
+.join-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  width: 81px;
+  height: 40px;
+  left: 1209px;
+  top: 171px;
+  background: #000000;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+  background-color: #C29974;
+  cursor: pointer;
+}
+
+.join-btn:active {
+  background-color: #CFAF91;
+}
+
+.join-btn:disabled {
+  background-color: #C7C1C1;
+}
+
+/* social list */
+
+.footer-social-list-item:hover,
+.footer-social-list-item:focus {
+  opacity: 0.5;
+}
+
+.footer-social-list-item:active {
+  opacity: 0.3;
+}
+
+/* additional info */
+
+.rate,
+.copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.rate:hover {
+  color: #C29974;
+  cursor: pointer;
+}
+
 /* rating stars */
+
 .rating-area {
   display: flex;
   flex-direction: row-reverse;
@@ -209,4 +376,20 @@ h2:hover, h2:focus {
 
 .rate-area>label:active {
   position: relative;
+}
+
+.dl-link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A2A2A2;
+}
+
+.dl-link:hover,
+.dl-link:focus,
+.dl-link:active {
+  color: #FFFFFF;
+  text-decoration: underline;
 }

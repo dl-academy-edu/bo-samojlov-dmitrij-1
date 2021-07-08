@@ -50,6 +50,12 @@ li {
   opacity: 0.3;
 }
 
+.contact-us {
+  display: flex;
+  margin-top: 64px;
+  margin-right: 0 auto;
+}
+
 .contact-us:hover,
 .contact-us:focus {
   opacity: 0.5;
