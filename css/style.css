@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,6 +30,34 @@ li {
 
 /* header */
 
+.container {
+  display: flex;
+  border: 1px solid blue;
+  max-width: 1180px;
+  margin: auto;
+}
+
+.mg-wrap {
+  margin-top: 50px;
+}
+
+.header-logo {
+  align-items: flex-end;
+}
+
+.header-nav {
+  margin-left: 60px;
+}
+
+.header-navigation {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-navigation-item {
+  padding-left: 20px;
+}
+
 .header-navigation-link {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -44,9 +78,9 @@ li {
 }
 
 .contact-us {
-  display: flex;
-  margin-top: 64px;
-  margin-right: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .contact-us:hover,
