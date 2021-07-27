@@ -1,28 +1,9 @@
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-:focus,
-:hover,
-:disabled {
-  outline: none;
-}
-
-:active {
-  text-decoration: none;
-  border-bottom: none;
-}
-
 /* main */
+
+.heading {
+  margin-top: 60px;
+  flex-direction: column;
+}
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -32,6 +13,16 @@ h1 {
   line-height: 49px;
   text-transform: uppercase;
   color: #1E0606;
+  margin-bottom: 15px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+}
+
+.breadcrumbs-item {
+  padding-right: 20px;
 }
 
 .breadcrumbs-item-link {
@@ -61,14 +52,23 @@ h1 {
   opacity: 0.5;
 }
 
+.main-content-wrapper {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
 /* contact-form */
 
 fieldset {
+  border: none;
+}
+
+.contact-form {
+  display: flex;
   width: 680px;
   height: 542px;
-  left: 110px;
-  top: 301px;
   background: #E5EAF8;
+  padding-top: 40px;
 }
 
 .contact-form label {
@@ -78,11 +78,35 @@ fieldset {
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
+  padding-bottom: 3px;
 }
 
 .contact-form input {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.name-input {
+  width: 600px;
+  height: 50px;
+  margin: 0px auto;
+  padding-top: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact-input {
+  width: 280px;
+  height: 50px;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form input:hover,
@@ -92,6 +116,26 @@ input:focus {
 }
 
 .contact-form input:disabled {
+  background: #FFFFFF;
+  border: 2px solid #EBEBEB;
+}
+
+textarea {
+  margin: 0 auto;
+  width: 600px;
+  height: 150px;
+  resize: none;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+textarea:hover,
+textarea:focus {
+  background: #FFFFFF;
+  border: 2px solid #C29974;
+}
+
+textarea:disabled {
   background: #FFFFFF;
   border: 2px solid #EBEBEB;
 }
@@ -130,6 +174,17 @@ input:focus {
 
 /* info */
 
+.info {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding-left: 120px;
+}
+
+p {
+  margin: 20px 0 20px 0;
+}
+
 .info-text {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -137,14 +192,17 @@ input:focus {
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
+  margin-top: 0;
+  width: 100%;
 }
 
 .uppercase-text {
-  font-family: 'Montserrat', sans-serif ;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
   line-height: 34px;
   text-transform: uppercase;
   color: #C29974;
+  margin-top: 0;
 }

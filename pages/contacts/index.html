@@ -19,13 +19,14 @@
 <body>
 
   <header class="container mg-wrap">
-    <a href="../../index.html" class="logo-link"><img class="header-logo" src="../../img/logo.svg" alt="Design Life Kids" width="100" height="52"></a>
+    <a href="../../index.html" class="logo-link"><img class="header-logo" src="../../img/logo.svg"
+        alt="Design Life Kids" width="100" height="52"></a>
     <nav class="header-nav">
       <ul class="header-navigation">
         <li class="header-navigation-item"><a class="header-navigation-link" href="../blog/index.html">Blog</a>
         </li>
-        <li class="header-navigation-item"><a class="header-navigation-link"
-            href="../catalog/index.html">Catalog</a></li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="../catalog/index.html">Catalog</a>
+        </li>
         <li class="header-navigation-item"><a class="header-navigation-link" href="#">About Us</a></li>
       </ul>
     </nav>
@@ -38,7 +39,7 @@
 
   <main>
 
-    <section class="heading">
+    <section class="heading container">
       <h1>contact us</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../../index.html">Home</a></li>
@@ -46,31 +47,56 @@
       </ul>
     </section>
 
-    <form class="contact-form" name="form" action="#" method="post">
-      <fieldset>
-        <label for="name">Name</label>
-        <input class="input" name="name" type="text" id="name" />
-        <label for="phone">Phone</label>
-        <input class="input" name="phone" type="text" id="phone" />
-        <label for="contact-email">Email</label>
-        <input class="input" name="email" type="text" id="contact-email" />
-        <label for="message">Message</label>
-        <input name="message" type="text" id="message"></input>
-        <input checked type="checkbox" name="info" id="agree" value="">
-        <label for="agree">By clicking on the button, you
-          consent to the
-          processing
-          of your personal data</label>
-        <button class="submit-btn" type="submit">submit</button>
-      </fieldset>
-    </form>
 
-    <div class="info">
-      <p class="info-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
-      <p class="info-text">Please use the form to contact us with your needs. Send us a message and we'll respond as
-        soon as possible.
-      </p>
-      <p class="uppercase-text">an expert is waiting to help you!</p>
+    <div class="main-content-wrapper container">
+
+      <form class="contact-form" name="form" action="#" method="post">
+
+        <fieldset class="main-form">
+          <fieldset class="input-wrap">
+            <label for="name">Name</label>
+            <input class="input name-input" name="name" type="text" id="name" />
+          </fieldset>
+
+          <div class="contact-info">
+            <fieldset class="input-wrap">
+              <label for="phone">Phone</label>
+              <input class="input contact-input" name="phone" type="text" id="phone" />
+            </fieldset>
+
+            <fieldset class="input-wrap">
+              <label for="contact-email">Email</label>
+              <input class="input contact-input" name="email" type="text" id="contact-email" />
+            </fieldset>
+          </div>
+
+          <fieldset class="input-wrap">
+            <label for="message">Message</label>
+            <textarea name="message" type="text" id="message"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <input checked type="checkbox" name="info" id="agree" value="">
+            <label for="agree">By clicking on the button, you
+              consent to the
+              processing
+              of your personal data</label>
+          </fieldset>
+
+          <fieldset>
+            <button class="submit-btn" type="submit">submit</button>
+          </fieldset>
+        </fieldset>
+
+      </form>
+
+      <div class="info">
+        <p class="info-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="info-text">Please use the form to contact us with your needs. Send us a message and we'll respond as
+          soon as possible.
+        </p>
+        <p class="uppercase-text">an expert is waiting to help you!</p>
+      </div>
     </div>
 
   </main>
@@ -107,10 +133,10 @@
           <button class="join-btn" type="submit">Join</button>
         </form>
         <ul class="footer-social-list">
-          <li class="footer-social-list-item"><a href="https://facebook.com/"><img src="../../img/facebook.svg" alt="facebook"
-                width="30" height="30"></a></li>
-          <li class="footer-social-list-item"><a href="https://twitter.com/"><img src="../../img/twitter.svg" alt="twitter"
-                width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://facebook.com/"><img src="../../img/facebook.svg"
+                alt="facebook" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://twitter.com/"><img src="../../img/twitter.svg"
+                alt="twitter" width="30" height="30"></a></li>
           <li class="footer-social-list-item"><a href="https://www.pinterest.ru/"><img src="../../img/pinterest.svg"
                 alt="pinterest" width="30" height="30"></a></li>
           <li class="footer-social-list-item"><a href="https://www.instagram.com/"><img src="../../img/instagram.svg"

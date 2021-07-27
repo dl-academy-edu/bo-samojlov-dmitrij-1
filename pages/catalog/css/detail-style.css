@@ -1,7 +1,12 @@
 /* main */
 
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -10,8 +15,16 @@ h1 {
   color: #1E0606;
 }
 
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs-item {
+  padding-right: 20px;
+}
+
 .breadcrumbs-item-link {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 20px;
@@ -40,6 +53,11 @@ h1 {
 /* filtr */
 
 .filtr {
+  display: flex;
+  height: 254px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
   background: rgba(125, 151, 218, 0.2);
   ;
 }
@@ -65,8 +83,6 @@ fieldset>label {
   line-height: 22px;
   color: #1E0606;
 }
-
-
 
 .apply-btn {
   font-family: 'Open Sans', sans-serif;
@@ -98,6 +114,20 @@ fieldset>label {
 }
 
 /* products */
+
+.product {
+  margin-top: 50px;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.product-list-item {
+  
+}
 
 h2 {
   font-family: 'Open Sans', sans-serif;

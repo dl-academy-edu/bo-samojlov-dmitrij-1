@@ -1,17 +1,34 @@
 /* main */
 
+.heading {
+  margin-top: 60px;
+  flex-direction: column;
+}
+
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
   color: #1E0606;
+  margin-bottom: 15px;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs li + li::before {
+  content: ""
+}
+
+.breadcrumbs-item {
+  padding-right: 20px;
 }
 
 .breadcrumbs-item-link {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 20px;
@@ -24,12 +41,12 @@ h1 {
   opacity: 0.5;
 }
 
-.breadcrumbs-item-link:active {
+.breadcrumbs-item-link:active { 
   opacity: 0.3;
 }
 
 .breadcrumbs-item-active {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 20px;
@@ -38,6 +55,20 @@ h1 {
 }
 
 /* news block */
+
+.news {
+  margin-top: 50px;
+}
+
+.news-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.news-list-item {
+  width: 33%;
+}
 
 .news-date {
   font-family: 'Open Sans', sans-serif;
@@ -69,9 +100,25 @@ h2:focus {
   font-size: 18px;
   line-height: 25px;
   color: #1E0606;
+  width: 99%;
 }
 
 /* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.pagination-list {
+  display: flex;
+}
+
+.pagination-list-item {
+  padding-left: 70px;
+}
 
 .pagination-list-item-link {
   font-family: 'Montserrat', sans-serif;
