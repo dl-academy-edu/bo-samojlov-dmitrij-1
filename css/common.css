@@ -67,8 +67,7 @@ li {
 }
 
 .header-navigation-link {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -86,7 +85,7 @@ li {
 }
 
 .contact-us {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-left: auto;
 }
@@ -111,7 +110,7 @@ li {
 }
 
 .contact-us-link {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -163,8 +162,7 @@ h3 {
 }
 
 .footer-navigation a {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -199,8 +197,7 @@ a:focus {
 }
 
 .footer-additional-list-item a {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -245,7 +242,7 @@ input:focus {
 }
 
 .connect input::placeholder {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   padding-left: 15px;
   padding: 9px;
   font-weight: normal;
@@ -256,20 +253,13 @@ input:focus {
 }
 
 .join-btn {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
   width: 81px;
   height: 40px;
-  left: 1209px;
-  top: 171px;
   background: #000000;
 }
 
@@ -320,7 +310,7 @@ input:focus {
 
 .rate,
 .copyright {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -392,7 +382,7 @@ input:focus {
 }
 
 .dl-link {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
