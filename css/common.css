@@ -510,17 +510,24 @@ img {
   left: 1px;
   top: 20px;
   position: absolute;
-  background: red;
+  background: #ffffff;
   width: 80px;
   height: 35px;
   z-index: -1;
 }
 
-/* .amount-radio-label::after {
+.amount-radio-label::after {
   content: "";
-  display: flex;
+  left: 1px;
+  top: 20px;
   position: absolute;
   background: #F3D0DB;
   width: 80px;
   height: 35px;
-} */
+  z-index: -1;
+  opacity: 0;
+}
+
+.amount-radio:checked+.amount-radio-label::after {
+  opacity: 1;
+}

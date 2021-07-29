@@ -114,12 +114,14 @@ h1 {
 
 .amount-radio-list {
   display: flex;
+  width: 100%;
 }
 
 .amount-radio-label {
   position: relative;
   cursor: pointer;
-  padding: 28px 6px 6px 28px;
+  padding: 28px 0px 0px 020px;
+  z-index: 0;
 }
 
 legend {
