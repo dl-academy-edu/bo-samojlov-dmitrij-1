@@ -87,6 +87,12 @@ fieldset {
   padding-bottom: 3px;
 }
 
+.checkbox-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
 .contact-form input {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);

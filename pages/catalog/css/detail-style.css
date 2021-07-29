@@ -64,7 +64,7 @@ h1 {
 
 .filtr {
   display: flex;
-  height: 254px;
+  min-height: auto;
   margin-top: 50px;
   background: rgba(125, 151, 218, 0.2);
 }
@@ -75,6 +75,51 @@ h1 {
   align-items: flex-start;
   margin-top: 42px;
   justify-content: space-between;
+}
+
+.checkbox-list {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.checkbox-list-item {
+  padding-top: 15px;
+}
+
+.checkbox-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.delivery-radio-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.delivery-radio-list-item {
+  padding-bottom: 10px;
+}
+
+.amount-radio-list {
+  display: flex;
+}
+
+.amount-radio-label {
+  position: relative;
+  cursor: pointer;
+  padding: 28px 6px 6px 28px;
 }
 
 legend {
@@ -95,16 +140,6 @@ fieldset>label {
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
-}
-
-.color {
-  display: flex;
-  flex-direction: column;
-}
-
-.delivery {
-  display: flex;
-  flex-direction: column;
 }
 
 .apply-btn {

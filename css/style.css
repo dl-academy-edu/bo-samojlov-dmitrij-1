@@ -326,10 +326,11 @@
 .about-us {
   display: flex;
   flex-direction: column;
-  position: relative;
   background: #E1F0F7;
   margin-right: 57px;
   max-width: 543px;
+  width: 50%;
+  padding: 30px;
 }
 
 .dlk-head {
@@ -339,9 +340,8 @@
   line-height: 46px;
   text-transform: uppercase;
   color: #1E0606;
-  position: absolute;
-  top: -55px;
-  left: 30px;
+  position: relative;
+  margin-top: -55px;
 }
 
 .about-heading {
@@ -351,8 +351,6 @@
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .about-info {
@@ -361,8 +359,6 @@
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
-  max-width: 80%;
-  margin-left: 30px;
   overflow: auto;
 }
 
@@ -375,8 +371,6 @@
   width: 123px;
   height: 40px;
   background: #000000;
-  margin-left: 30px;
-  margin-bottom: 30px;
 }
 
 .buy-btn:hover,
@@ -397,9 +391,11 @@
 
 .contacts {
   display: flex;
+  flex-direction: column;
   position: relative;
   background: #E1F0F7;
-  max-height: 210px;
+  width: 50%;
+  padding: 30px;
 }
 
 .contact-head {
@@ -409,9 +405,8 @@
   line-height: 46px;
   text-transform: uppercase;
   color: #1E0606;
-  position: absolute;
-  top: -55px;
-  left: 30px;
+  position: relative;
+  margin-top: -55px;
 }
 
 .contacts-info {
@@ -420,16 +415,11 @@
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
-  padding-top: 40px;
-  max-width: 80%;
-  margin: 0 auto;
-  overflow: auto;
 }
 
 .map {
-  position: absolute;
-  top: 150px;
-  left: 35px;
+  position: relative;
+  margin: 0 auto;
 }
 
 /* modal window */
@@ -453,6 +443,12 @@ fieldset {
   line-height: 19px;
   color: #1E0606;
   padding-bottom: 3px;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
 .contact-form input {
