@@ -23,11 +23,7 @@
   color: rgba(30, 6, 6, 0.05);
 }
 
-.main-theme-menu-button-head {
-  width: 31px;
-  height: 3px;
-  border: none;
-  outline: none;
+.main-theme-menu-item:first-child .main-theme-menu-button {
   background-color: rgba(30, 6, 6, 0.6);
 }
 
@@ -222,6 +218,10 @@
   margin-top: 90px;
 }
 
+.delivery-img {
+  background: #B9D9E6;
+}
+
 .delivery-info {
   display: flex;
   flex-direction: column;
@@ -231,6 +231,11 @@
 .delivery-list {
   margin-bottom: 30px;
   margin-top: 0;
+}
+
+.delivery-list-item:first-child .delivery-list-item-link {
+  background: #D6CAC2;
+
 }
 
 .delivery-list-item {
@@ -267,6 +272,8 @@
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
+  margin: 0 0 15px 0;
+  width: 77%;
 }
 
 .learn-btn {
@@ -356,6 +363,7 @@
   color: #1E0606;
   max-width: 80%;
   margin-left: 30px;
+  overflow: auto;
 }
 
 .buy-btn {
@@ -415,6 +423,7 @@
   padding-top: 40px;
   max-width: 80%;
   margin: 0 auto;
+  overflow: auto;
 }
 
 .map {
@@ -425,30 +434,82 @@
 
 /* modal window */
 
-.popup {
-  background-color: #E5EAF8;
+fieldset {
+  border: none;
 }
 
-.popup label {
+.contact-form {
+  display: flex;
+  width: 680px;
+  height: 542px;
+  background: #E5EAF8;
+  padding-top: 40px;
+}
+
+.contact-form label {
   font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 19px;
+  color: #1E0606;
+  padding-bottom: 3px;
 }
 
-.popup input {
+.contact-form input {
   background: #FFFFFF;
-  border: 2px solid #C7C1C1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.popup input:hover,
+.name-input {
+  width: 600px;
+  height: 50px;
+  margin: 0px auto;
+  padding-top: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact-input {
+  width: 280px;
+  height: 50px;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input:hover,
 input:focus {
   background: #FFFFFF;
   border: 2px solid #C29974;
 }
 
-.popup input:disabled {
+.contact-form input:disabled {
+  background: #FFFFFF;
+  border: 2px solid #EBEBEB;
+}
+
+textarea {
+  margin: 0 auto;
+  width: 600px;
+  height: 150px;
+  resize: none;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+textarea:hover,
+textarea:focus {
+  background: #FFFFFF;
+  border: 2px solid #C29974;
+}
+
+textarea:disabled {
   background: #FFFFFF;
   border: 2px solid #EBEBEB;
 }

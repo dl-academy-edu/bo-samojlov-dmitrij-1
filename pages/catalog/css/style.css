@@ -20,7 +20,15 @@ h1 {
 }
 
 .breadcrumbs-item {
-  padding-right: 20px;
+  position: relative;
+  padding-right: 48px;
+}
+
+.breadcrumbs-item:first-child::after {
+  position: absolute;
+  content: url(/img/breadcrumb.svg);
+  right: 15px;
+  bottom: 4px;
 }
 
 .breadcrumbs-item-link {
@@ -41,7 +49,7 @@ h1 {
   opacity: 0.3;
 }
 
-.breadcrumbs-item-active {
+.breadcrumbs-item:last-child {
   font-family: "Crimson Text", "Palatino", serif;
   font-style: italic;
   font-weight: normal;

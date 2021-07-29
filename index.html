@@ -43,7 +43,7 @@
         <span class="slide-counter">01</span>
         <ul class="main-theme-menu">
           <li class="main-theme-menu-item">
-            <button class="main-theme-menu-button-head" aria-label="menu-button"></button>
+            <button class="main-theme-menu-button" aria-label="menu-button"></button>
           </li>
           <li class="main-theme-menu-item">
             <button class="main-theme-menu-button" aria-label="menu-button"></button>
@@ -101,19 +101,19 @@
       <h2 class="category-heading">category products</h2>
       <div class="container">
         <ul class="products-list">
-          <li class="products-list-item"><a class="products-list-item-link" href="#"><img src="img/apparel_kids.png"
+          <li class="products-list-item product-img-1"><a class="products-list-item-link" href="#"><img src="img/apparel_kids.png"
                 alt="sweater" width="280" height="270">
               <span class="products-list-item-link-text">apparel kids</span>
             </a></li>
-          <li class="products-list-item"><a class="products-list-item-link" href="#"><img src="img/holiday_shop.png"
+          <li class="products-list-item product-img-2"><a class="products-list-item-link" href="#"><img src="img/holiday_shop.png"
                 alt="holiday-sock" width="280" height="270">
               <span class="products-list-item-link-text">holiday shop</span>
             </a></li>
-          <li class="products-list-item"><a class="products-list-item-link" href="./pages/catalog/detail.html"><img
+          <li class="products-list-item product-img-3"><a class="products-list-item-link" href="./pages/catalog/detail.html"><img
                 src="img/toys.png" alt="deer" width="280" height="270">
               <span class="products-list-item-link-text">toys</span>
             </a></li>
-          <li class="products-list-item"><a class="products-list-item-link" href="#"><img src="img/accessories.png"
+          <li class="products-list-item product-img-4"><a class="products-list-item-link" href="#"><img src="img/accessories.png"
                 alt="skater" width="280" height="270">
               <span class="products-list-item-link-text">accessories</span>
             </a></li>
@@ -131,7 +131,7 @@
     </section>
 
     <section class="delivery container mg-delivery">
-      <img src="img/woman.jpg" alt="woman" width="480" height="559">
+      <img class="delivery-img" src="img/woman.jpg" alt="woman" width="480" height="559">
       <div class="delivery-info">
         <h2 class="delivery-heading">delivery</h2>
         <ul class="delivery-list">
@@ -175,7 +175,7 @@
       </section>
       <section class="contacts">
         <h2 class="contact-head">contacts</h2>
-        <p class="contacts-info">Some days i feel like i've been working on dlk my entire life and there are other days
+        <p class="contacts-info"> Some days i feel like i've been working on dlk my entire life and there are other days
           that i am completely
           shocked that four years have flown by. It's simply magical.</p>
         <div class="map">
@@ -211,6 +211,7 @@
           <li class="footer-additional-list-item"><a href="#">Search</a></li>
         </ul>
       </section>
+      
       <section class="connect">
         <h3>Connect</h3>
         <form class="email-submit" action="#">
@@ -253,30 +254,40 @@
   </footer>
 
   <!-- modal window -->
-  <div class="popup hidden">
-    <div class="popup-body">
-      <div class="popup-content">
-        <a href="#" class="popup-close"><img src="img/close.svg" alt="close"></a>
-        <form class="popup" name="form" action="#" method="post">
-          <fieldset>
-            <label for="name">Name</label>
-            <input class="input" name="name" type="text" id="name" />
+  
+  <div class="popup-wrapper hidden">
+    <form class="contact-form" name="form" action="#" method="post">
+      <fieldset class="main-form">
+        <fieldset class="input-wrap">
+          <label for="name">Name</label>
+          <input class="input name-input" name="name" type="text" id="name" />
+        </fieldset>
+        <div class="contact-info">
+          <fieldset class="input-wrap">
             <label for="phone">Phone</label>
-            <input class="input" name="phone" type="text" id="phone" />
-            <label for="contact-email">Email</label>
-            <input class="input" name="email" type="text" id="contact-email" />
-            <label for="message">Message</label>
-            <input name="message" type="text" id="message"></input>
-            <input type="checkbox" name="info" id="agree" value="">
-            <label cheked for="agree">By clicking on the button, you
-              consent to the
-              processing
-              of your personal data</label>
-            <button class="submit-btn" type="submit">submit</button>
+            <input class="input contact-input" name="phone" type="text" id="phone" />
           </fieldset>
-        </form>
-      </div>
-    </div>
+          <fieldset class="input-wrap">
+            <label for="contact-email">Email</label>
+            <input class="input contact-input" name="email" type="text" id="contact-email" />
+          </fieldset>
+        </div>
+        <fieldset class="input-wrap">
+          <label for="message">Message</label>
+          <textarea name="message" type="text" id="message"></textarea>
+        </fieldset>
+        <fieldset>
+          <input checked type="checkbox" name="info" id="agree" value="">
+          <label for="agree">By clicking on the button, you
+            consent to the
+            processing
+            of your personal data</label>
+        </fieldset>
+        <fieldset>
+          <button class="submit-btn" type="submit">submit</button>
+        </fieldset>
+      </fieldset>
+    </form>
   </div>
 
 </body>

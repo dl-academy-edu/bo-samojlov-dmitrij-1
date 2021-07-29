@@ -400,3 +400,29 @@ input:focus {
   color: #FFFFFF;
   text-decoration: underline;
 }
+
+/* img background */
+
+.product-img-1 {
+  background: #DBE4DB;
+}
+
+.product-img-2 {
+  background: #EADDD3;
+}
+
+.product-img-3 {
+  background: #F8F2DA;
+}
+
+.product-img-4 {
+  background: #D5D4E1;
+}
+
+.product-img-5 {
+  background: #F3D0DB;
+}
+
+.product-img-6 {
+  background: #E5EAF8;
+}
