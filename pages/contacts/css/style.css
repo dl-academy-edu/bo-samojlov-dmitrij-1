@@ -102,7 +102,15 @@ fieldset {
   width: 600px;
   height: 50px;
   margin: 0px auto;
-  padding-top: 40px;
+  padding: 20px 11px 14px;
+}
+
+.name-input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
 }
 
 .contact-info {
@@ -114,6 +122,7 @@ fieldset {
 .contact-input {
   width: 280px;
   height: 50px;
+  padding: 20px 11px 14px;
 }
 
 .input-wrap {
@@ -139,6 +148,7 @@ textarea {
   resize: none;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 11px 14px;
 }
 
 textarea:hover,
@@ -161,6 +171,7 @@ textarea:disabled {
   border: none;
   width: 106px;
   height: 40px;
+  position: relative;
 }
 
 .submit-btn:hover,

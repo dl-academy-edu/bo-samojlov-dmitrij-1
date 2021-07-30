@@ -219,6 +219,7 @@
 }
 
 .delivery-img {
+  display: block;
   background: #B9D9E6;
 }
 
@@ -314,6 +315,10 @@
 
 .partners-list-item {
   margin-right: 127px;
+}
+
+.partners-list-item:hover {
+  opacity: 0.5;
 }
 
 /* About Us */
@@ -460,7 +465,16 @@ fieldset {
   width: 600px;
   height: 50px;
   margin: 0px auto;
-  padding-top: 40px;
+  padding: 20px 11px 14px;
+}
+
+.name-input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+  padding: 20px 11px 14px 15px;
 }
 
 .contact-info {
@@ -472,6 +486,7 @@ fieldset {
 .contact-input {
   width: 280px;
   height: 50px;
+  padding: 20px 11px 14px;
 }
 
 .input-wrap {
@@ -497,6 +512,7 @@ textarea {
   resize: none;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 11px 14px;
 }
 
 textarea:hover,
