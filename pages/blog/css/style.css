@@ -1,8 +1,10 @@
 /* main */
 
 .heading {
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+      flex-direction: column;
   margin-top: 60px;
-  flex-direction: column;
 }
 
 h1 {
@@ -16,8 +18,12 @@ h1 {
 }
 
 .breadcrumbs {
-  display: flex;
-  flex-direction: row;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+      flex-direction: row;
 }
 
 .breadcrumbs-item {
@@ -70,8 +76,12 @@ h1 {
 }
 
 .news-list {
-  display: flex;
-  flex-flow: row wrap;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+      flex-flow: row wrap;
   width: 100%;
 }
 
@@ -112,14 +122,20 @@ h2:focus {
 /* pagination */
 
 .pagination {
-  display: flex;
-  justify-content: space-between;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+      justify-content: space-between;
   margin-bottom: 60px;
   margin-top: 30px;
 }
 
 .pagination-list {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
 }
 
 .pagination-list-item {

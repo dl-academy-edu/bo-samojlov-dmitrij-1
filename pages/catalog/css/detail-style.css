@@ -1,8 +1,12 @@
 /* main */
 
 .heading {
-  display: flex;
-  flex-direction: column;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: column;
+    -moz-flex-directiony: column;
+      flex-direction: column;
   margin-top: 60px;
 }
 
@@ -16,7 +20,9 @@ h1 {
 }
 
 .breadcrumbs {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
   margin: 0;
 }
 
@@ -63,18 +69,26 @@ h1 {
 /* filtr */
 
 .filtr {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
   min-height: auto;
   margin-top: 50px;
   background: rgba(125, 151, 218, 0.2);
 }
 
 .filtr-content {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+      align-items: flex-start;
+  -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+      justify-content: space-between;
   width: 1180px;
-  align-items: flex-start;
   margin-top: 42px;
-  justify-content: space-between;
 }
 
 .checkbox-list {
@@ -113,7 +127,9 @@ h1 {
 }
 
 .amount-radio-list {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
   width: 100%;
 }
 
@@ -177,9 +193,15 @@ fieldset>label {
 }
 
 .product-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+      justify-content: space-between;
   width: 100%;
 }
 
@@ -189,9 +211,15 @@ fieldset>label {
 }
 
 .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+      flex-direction: column;
+  -webkit-align-items: center;
+    -moz-align-items: center;
+      align-items: center;
 }
 
 h2 {
@@ -214,14 +242,20 @@ h2 {
 /* pagination */
 
 .pagination {
-  display: flex;
-  justify-content: space-between;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+      justify-content: space-between;
   margin-bottom: 60px;
   margin-top: 30px;
 }
 
 .pagination-list {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
 }
 
 .pagination-list-item {

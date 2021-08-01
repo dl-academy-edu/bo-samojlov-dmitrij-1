@@ -46,8 +46,12 @@
 }
 
 .slide-info {
-  display: flex;
-  flex-direction: column;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+      flex-direction: column;
 }
 
 .heading {
@@ -147,12 +151,18 @@
 }
 
 .products-list {
-  display: flex;
-  flex-direction: row;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+      flex-direction: row;
 }
 
 .products-list-item {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
   margin-right: 20px;
 }
 
@@ -224,8 +234,12 @@
 }
 
 .delivery-info {
-  display: flex;
-  flex-direction: column;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+      flex-direction: column;
   margin-left: 120px;
 }
 
@@ -309,8 +323,12 @@
 }
 
 .partners-list {
-  display: flex;
-  align-items: center;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-align-items: center;
+    -moz-align-items: center;
+      align-items: center;
 }
 
 .partners-list-item {
@@ -329,8 +347,12 @@
 }
 
 .about-us {
-  display: flex;
-  flex-direction: column;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+      flex-direction: column;
   background: #E1F0F7;
   margin-right: 57px;
   max-width: 543px;
@@ -395,8 +417,12 @@
 /* Contacts */
 
 .contacts {
-  display: flex;
-  flex-direction: column;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+      flex-direction: column;
   position: relative;
   background: #E1F0F7;
   width: 50%;
@@ -434,7 +460,9 @@ fieldset {
 }
 
 .contact-form {
-  display: flex;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
   width: 680px;
   height: 542px;
   background: #E5EAF8;
@@ -478,8 +506,12 @@ fieldset {
 }
 
 .contact-info {
-  display: flex;
-  justify-content: space-between;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+      justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -490,8 +522,12 @@ fieldset {
 }
 
 .input-wrap {
-  display: flex;
-  flex-direction: column;
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+      flex-direction: column;
 }
 
 .contact-form input:hover,
