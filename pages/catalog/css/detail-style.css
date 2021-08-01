@@ -136,7 +136,7 @@ h1 {
 .amount-radio-label {
   position: relative;
   cursor: pointer;
-  padding: 28px 0px 0px 020px;
+  padding: 28px 0px 0px 20px;
   z-index: 0;
   margin-left: 20px;
 }
@@ -170,6 +170,8 @@ fieldset>label {
   width: 95px;
   height: 40px;
   background: #000000;
+  position: relative;
+  top: 35px
 }
 
 .apply-btn:hover,
@@ -208,6 +210,7 @@ fieldset>label {
 .product-list-item {
   padding-left: 12px;
   padding-bottom: 20px;
+  width: 33%;
 }
 
 .product-card {
@@ -220,6 +223,10 @@ fieldset>label {
   -webkit-align-items: center;
     -moz-align-items: center;
       align-items: center;
+}
+
+.product-img {
+  background: url(/img/logo.svg) center no-repeat;
 }
 
 h2 {

@@ -196,6 +196,7 @@ a:focus {
   opacity: 0.2;
 }
 
+
 /* customer info */
 
 .customer-info {
@@ -254,6 +255,7 @@ a:focus {
   Top: 171px;
   Left: 910px;
   background-color: #666666;
+  border: transparent 1px solid;
 }
 
 .connect input:hover,

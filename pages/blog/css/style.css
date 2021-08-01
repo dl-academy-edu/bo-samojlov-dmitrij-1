@@ -72,7 +72,7 @@ h1 {
 }
 
 .news-img {
-  background: #396FAD;
+  background: url(/img/logo.svg) center #DAE0E6 no-repeat;
 }
 
 .news-list {

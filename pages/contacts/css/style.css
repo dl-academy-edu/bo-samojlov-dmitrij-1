@@ -81,7 +81,7 @@ fieldset {
     -moz-display: flex;
       display: flex;
   width: 680px;
-  height: 542px;
+  height: max-content;
   background: #E5EAF8;
   padding-top: 40px;
 }
@@ -188,6 +188,7 @@ textarea:disabled {
   width: 106px;
   height: 40px;
   position: relative;
+  margin-top: 17px;
 }
 
 .submit-btn:hover,
