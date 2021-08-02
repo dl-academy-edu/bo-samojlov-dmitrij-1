@@ -128,9 +128,9 @@
   right: 0px;
 }
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
 
 /* h2 font style */
 
@@ -248,7 +248,7 @@
   margin-top: 0;
 }
 
-.delivery-list-item:first-child::before {
+.delivery-list-item-link-active::before {
   content: "";
   display: block;
   position: relative;
@@ -260,7 +260,7 @@
   right: 50px;
 }
 
-.delivery-list-item:first-child:hover {
+.delivery-list-item-link:first-child + .delivery-list-item:hover {
   font-weight: bold;
 }
 
@@ -285,6 +285,20 @@
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
+}
+
+.delivery-list-item-link-active {
+  font-family: "Crimson Text", "Palatino", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+}
+
+.delivery-list-item-link-active:hover,
+.delivery-list-item-link-active:focus {
+  font-weight: bold;
 }
 
 .delivery-list-item-link:hover,

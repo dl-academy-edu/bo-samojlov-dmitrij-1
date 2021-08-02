@@ -106,12 +106,13 @@ li {
   padding-left: 25px;
 }
 
-.contact-us:hover,
-.contact-us:focus {
+.search-btn:hover,
+.search-btn:focus {
   opacity: 0.5;
+  cursor: pointer;
 }
 
-.contact-us:active {
+.search-btn:active {
   opacity: 0.3;
 }
 
@@ -129,6 +130,15 @@ li {
   line-height: 19px;
   text-transform: uppercase;
   color: #1E0606;
+}
+
+.contact-us-link:hover,
+.contact-us-link:focus {
+  opacity: 0.5;
+}
+
+.contact-us-link:active {
+  opacity: 0.3;
 }
 
 /* footer */
