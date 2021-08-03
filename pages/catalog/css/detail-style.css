@@ -91,6 +91,43 @@ h1 {
   margin-top: 42px;
 }
 
+.coast-range {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+      appearance: none;
+  width: 188px;
+  height: 6px;
+  margin: 25px 14px 16px 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.coast-range:hover,
+.coast-range:focus {
+  cursor: pointer;
+}
+
+.coast-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+      appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 8px solid #C29974;
+  border-radius: 50%;
+}
+
+.range-value {
+  -webkit-display: flex;
+    -moz-display: flex;
+      display: flex;
+  -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+      justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 .checkbox-list {
   margin-top: 0px;
   margin-bottom: 40px;
@@ -122,6 +159,14 @@ h1 {
   cursor: pointer;
 }
 
+.delivery-heading {
+  margin-left: 70px;
+}
+
+.delivery-radio-list {
+  margin-left: 70px;
+}
+
 .delivery-radio-list-item {
   padding-bottom: 10px;
 }
@@ -131,6 +176,10 @@ h1 {
     -moz-display: flex;
       display: flex;
   width: 100%;
+}
+
+.amount-heading {
+  margin-left: 20px;
 }
 
 .amount-radio-label {
@@ -224,21 +273,26 @@ fieldset>label {
   text-align: center;
   text-transform: uppercase;
   color: #1e0606;
-  top: 45%;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  width: 207px;
+  height: 207px;
+  top: 50%;
   left: 50%;
-  transform: translate(-45%, -50%);
-  padding: 80px;
+  transform: translate(-50%, -50%);
+  padding: 82px 12px 96px 11px;
   background: #CEE5F4;
-  opacity: 0;
+  opacity: 1;
 }
 
 .product-card:focus::after,
 .product-card:hover::after {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .product-card:active::after {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .product-card {

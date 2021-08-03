@@ -148,11 +148,13 @@ fieldset {
 
 .contact-form input:hover,
 input:focus {
+  padding: 19px 10px 13px;
   background: #FFFFFF;
   border: 2px solid #C29974;
 }
 
 .contact-form input:disabled {
+  padding: 19px 10px 13px;
   background: #FFFFFF;
   border: 2px solid #EBEBEB;
 }

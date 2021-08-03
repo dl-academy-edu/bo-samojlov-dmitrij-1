@@ -259,11 +259,10 @@ a:focus {
 }
 
 .connect input {
-  Width: 380px;
+  width: 380px;
   width: 100%;
   Height: 40px;
-  Top: 171px;
-  Left: 910px;
+  padding: 15px 9px 9px;
   background-color: #666666;
   border: transparent 1px solid;
 }
@@ -276,12 +275,11 @@ input:focus {
 .connect input::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   padding-left: 15px;
-  padding: 9px;
+  padding: 0px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #EBEBEB;
-  background-color: #666666;
 }
 
 .join-btn {
@@ -516,6 +514,14 @@ img {
   opacity: 1;
 }
 
+.checkbox:disabled+.checkbox-label::before {
+  opacity: 0.5;
+}
+
+.checkbox:disabled+.checkbox-label::after {
+  opacity: 0.5;
+}
+
 /* radio */
 
 .radio-btn {
@@ -553,6 +559,10 @@ img {
   opacity: 1;
 }
 
+.delivery-radio:disabled+.delivery-radio-label::before {
+  opacity: 0.5;
+}
+
 .amount-radio-label::before {
   content: "";
   left: 1px;
@@ -578,4 +588,13 @@ img {
 
 .amount-radio:checked+.amount-radio-label::after {
   opacity: 1;
+}
+
+.amount-radio-label:hover::after {
+  background-color: #F3D0DB;
+  opacity: 0.3;
+}
+
+.amount-radio:disabled+.amount-radio-label::before {
+  background-color: #C7C1C1;
 }

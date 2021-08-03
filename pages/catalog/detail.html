@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/common.css" rel="stylesheet">
-  <link href="./css/detail-style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
     rel="stylesheet">
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/common.css" rel="stylesheet">
+  <link href="./css/detail-style.css" rel="stylesheet">
   <title>Toys</title>
 </head>
 
@@ -49,11 +49,11 @@
 
     <form class="filtr" action="#" method="post">
       <div class="filtr-content container">
-        
+
         <fieldset class="coast">
           <legend>Coast</legend>
-          <input type="range" min="0" max="500" value="150" class="slider" aria-label="coast-slide">
-          <div class="slider-value">
+          <input type="range" min="0" max="500" value="150" class="coast-range" aria-label="coast-slide">
+          <div class="range-value">
             <span>0</span>
             <span>500</span>
           </div>
@@ -82,21 +82,22 @@
         </fieldset>
 
         <fieldset class="delivery">
-          <legend>Delivery</legend>
+          <legend class="delivery-heading">Delivery</legend>
           <ul class="delivery-radio-list">
             <li class="delivery-radio-list-item">
               <input class="delivery-radio radio-btn" type="radio" name="shipping" value="free" id="free-shipping">
               <label class="delivery-radio-label" for="free-shipping">Free shipping</label>
             </li>
             <li class="radio-list-item">
-              <input class="delivery-radio radio-btn" checked type="radio" name="shipping" value="fast" id="fast-shipping">
+              <input class="delivery-radio radio-btn" checked type="radio" name="shipping" value="fast"
+                id="fast-shipping">
               <label class="delivery-radio-label" for="fast-shipping">Fast shipping</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="amount">
-          <legend>Amount</legend>
+          <legend class="amount-heading">Amount</legend>
           <ul class="amount-radio-list">
             <li class="amount-radio-list-item">
               <input class="amount-radio radio-btn" checked type="radio" name="quantity" value="0-10" id="0-10">
@@ -143,7 +144,8 @@
         </li>
         <li class="product-list-item">
           <a class="product-card">
-            <img class="product-img" src="../../img/bubblegum_machine.png" alt="bubblegum-machine" width="380" height="385">
+            <img class="product-img" src="../../img/bubblegum_machine.png" alt="bubblegum-machine" width="380"
+              height="385">
             <h2>gatcha gatcha gumball machine</h2>
             <span class="price">&dollar;56.00 USD</span>
           </a>
@@ -212,14 +214,14 @@
           <button class="join-btn" type="submit">Join</button>
         </form>
         <ul class="footer-social-list">
-          <li class="footer-social-list-item"><a href="https://facebook.com/" target='_blank'><img src="../../img/facebook.svg" alt="facebook"
-                width="30" height="30"></a></li>
-          <li class="footer-social-list-item"><a href="https://twitter.com/" target='_blank'><img src="../../img/twitter.svg" alt="twitter"
-                width="30" height="30"></a></li>
-          <li class="footer-social-list-item"><a href="https://www.pinterest.ru/" target='_blank'><img src="../../img/pinterest.svg"
-                alt="pinterest" width="30" height="30"></a></li>
-          <li class="footer-social-list-item"><a href="https://www.instagram.com/" target='_blank'><img src="../../img/instagram.svg"
-                alt="instagram" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://facebook.com/" target="_blank"><img
+                src="../../img/facebook.svg" alt="facebook" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://twitter.com/" target="_blank"><img
+                src="../../img/twitter.svg" alt="twitter" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://www.pinterest.ru/" target="_blank"><img
+                src="../../img/pinterest.svg" alt="pinterest" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://www.instagram.com/" target="_blank"><img
+                src="../../img/instagram.svg" alt="instagram" width="30" height="30"></a></li>
         </ul>
       </section>
 
