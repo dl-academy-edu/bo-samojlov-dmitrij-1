@@ -5,7 +5,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
+  margin-top: 36px;
 }
 
 h1 {
@@ -22,6 +22,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0px;
 }
 
 .breadcrumbs-item {
@@ -32,7 +33,7 @@ h1 {
 .breadcrumbs-item:first-child::after {
   position: absolute;
   content: url(../../../img/breadcrumb.svg);
-  right: 15px;
+  right: 18px;
   bottom: 4px;
 }
 
@@ -85,7 +86,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 20px 0 0;
+  margin: 28px 20px 0 0;
 }
 
 .category-list-item-link {
@@ -122,13 +123,13 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 55px;
+  margin-top: 50px;
   margin-bottom: 55px;
 }
 
 .description-text {
   width: 73%;
-  margin: 15px 0 0 0;
+  margin: 9px 0 0 0;
 }
 
 h2 {

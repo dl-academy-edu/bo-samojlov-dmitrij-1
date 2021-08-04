@@ -8,7 +8,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
+  margin-top: 33px;
 }
 
 h1 {
@@ -24,19 +24,19 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  margin-top: -8px;
 }
 
 .breadcrumbs-item {
   position: relative;
-  padding-right: 48px;
+  padding-right: 50px;
 }
 
 .breadcrumbs-item:first-child:after,
 .breadcrumbs-item:nth-child(2):after {
   position: absolute;
   content: url(../../../img/breadcrumb.svg);
-  right: 15px;
+  right: 19px;
   bottom: 4px;
 }
 
@@ -74,7 +74,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   min-height: auto;
-  margin-top: 50px;
+  margin-top: 32px;
+  margin-left: -27px;
   background: rgba(125, 151, 218, 0.2);
 }
 
@@ -92,7 +93,7 @@ h1 {
   margin-top: 42px;
 }
 
-.coast-range {
+.cost-range {
   -webkit-appearance: none;
       -moz-appearance: none;
           appearance: none;
@@ -102,12 +103,12 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.coast-range:hover,
-.coast-range:focus {
+.cost-range:hover,
+.cost-range:focus {
   cursor: pointer;
 }
 
-.coast-range::-webkit-slider-thumb {
+.cost-range::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
   width: 24px;

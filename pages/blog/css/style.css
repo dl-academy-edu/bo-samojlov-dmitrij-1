@@ -5,17 +5,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-margin-top: 60px;
+  margin-top: 32px;
 }
 
 h1 {
-font-family: "Montserrat", "Verdana", sans-serif;
-font-weight: bold;
-font-size: 40px;
-line-height: 49px;
-text-transform: uppercase;
-color: #1E0606;
-margin-bottom: 15px;
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-bottom: 15px;
 }
 
 .breadcrumbs {
@@ -29,52 +29,53 @@ margin-bottom: 15px;
 }
 
 .breadcrumbs-item {
-padding-right: 48px;
-position: relative;
+  position: relative;
+  padding-right: 48px;
+  margin-top: -15px;
 }
 
 .breadcrumbs-item:first-child::after {
-position: absolute;
-content: url(../../../img/breadcrumb.svg);
-right: 15px;
-bottom: 2px;
+  position: absolute;
+  content: url(../../../img/breadcrumb.svg);
+  right: 23px;
+  bottom: 2px;
 }
 
 .breadcrumbs-item-link {
-font-family: "Crimson Text", "Palatino", serif;
-font-style: italic;
-font-weight: normal;
-font-size: 20px;
-line-height: 25px;
-color: #1E0606;
+  font-family: "Crimson Text", "Palatino", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
 }
 
 .breadcrumbs-item-link:hover,
 .breadcrumbs-item-link:focus {
-opacity: 0.5;
+  opacity: 0.5;
 }
 
 .breadcrumbs-item-link:active { 
-opacity: 0.3;
+  opacity: 0.3;
 }
 
 .breadcrumbs-item:last-child {
-font-family: "Crimson Text", "Palatino", serif;
-font-style: italic;
-font-weight: normal;
-font-size: 20px;
-line-height: 25px;
-opacity: 0.5;
+  font-family: "Crimson Text", "Palatino", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  opacity: 0.5;
 }
 
 /* news block */
 
 .news {
-margin-top: 50px;
+  margin-top: 50px;
 }
 
 .news-img {
-background: url(/img/logo.svg) center #DAE0E6 no-repeat;
+  background: url(/img/logo.svg) center #DAE0E6 no-repeat;
 }
 
 .news-list {
@@ -85,41 +86,41 @@ background: url(/img/logo.svg) center #DAE0E6 no-repeat;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-width: 100%;
+  width: 100%;
 }
 
 .news-list-item {
-width: 33%;
+  width: 33%;
 }
 
 .news-date {
-font-family: "Open Sans", "Arial", sans-serif;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-color: #818181;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #818181;
 }
 
 h2 {
-font-family: "Montserrat", "Verdana", sans-serif;
-font-weight: bold;
-font-size: 24px;
-line-height: 31px;
-color: #1E0606;
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1E0606;
 }
 
 h2:hover,
 h2:focus {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .news-content {
-font-family: "Open Sans", "Arial", sans-serif;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-color: #1E0606;
-width: 99%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+  width: 99%;
 }
 
 /* pagination */
@@ -131,8 +132,8 @@ width: 99%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-margin-bottom: 60px;
-margin-top: 30px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .pagination-list {
@@ -142,37 +143,37 @@ margin-top: 30px;
 }
 
 .pagination-list-item {
-padding-left: 70px;
+  padding-left: 70px;
 }
 
 .pagination-list-item:first-child .pagination-list-item-link {
-color: #C29974;
+  color: #C29974;
 }
 
 .pagination-list-item-link {
-font-family: "Montserrat", "Verdana", sans-serif;
-font-weight: bold;
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-color: #1E0606;
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1E0606;
 }
 
 .pagination-list-item-link:hover,
 .pagination-list-item-link:focus {
-color: #C29974;
+  color: #C29974;
 }
 
 .arrow-btn {
-border: none;
-outline: none;
-background: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 .arrow-btn:hover, .arrow-btn:focus {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .arrow-btn:active {
-opacity: 0.5;
+  opacity: 0.5;
 }

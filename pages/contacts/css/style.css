@@ -5,7 +5,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
+  margin-top: 32px;
 }
 
 h1 {
@@ -15,7 +15,6 @@ h1 {
   line-height: 49px;
   text-transform: uppercase;
   color: #1E0606;
-  margin-bottom: 15px;
 }
 
 .breadcrumbs {
@@ -29,6 +28,7 @@ h1 {
 }
 
 .breadcrumbs-item {
+  margin-top: -27px;
   padding-right: 48px;
   position: relative;
 }
@@ -36,7 +36,7 @@ h1 {
 .breadcrumbs-item:first-child::after {
   position: absolute;
   content: url(../../../img/breadcrumb.svg);
-  right: 15px;
+  right: 19px;
   bottom: 4px;
 }
 
@@ -87,7 +87,8 @@ fieldset {
   height: -moz-max-content;
   height: max-content;
   background: #E5EAF8;
-  padding-top: 40px;
+  padding-top: 16px;
+  padding-left: 10px;
 }
 
 .contact-form label {
@@ -261,7 +262,7 @@ textarea:disabled {
 }
 
 p {
-  margin: 20px 0 20px 0;
+  margin: 20px 0px 22px 13px;
 }
 
 .info-text {
@@ -270,7 +271,7 @@ p {
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
-  margin-top: 0;
+  margin-top: -10px;
   width: 100%;
 }
 

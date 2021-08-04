@@ -72,7 +72,7 @@ li {
 }
 
 .header-navigation-item {
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .header-navigation-link {
@@ -104,7 +104,7 @@ li {
 }
 
 .contact-us-link {
-  padding-left: 25px;
+  padding-left: 16px;
 }
 
 .search-btn:hover,
@@ -115,6 +115,10 @@ li {
 
 .search-btn:active {
   opacity: 0.3;
+}
+
+.search-btn:disabled {
+  opacity: 0.1;
 }
 
 .search-btn {
@@ -401,17 +405,12 @@ input:focus {
 }
 
 .copyright {
-  margin-top: 25px;
-  margin-left: 175px;
+  margin-top: 10px;
+  margin-left: 167px;
 }
 
 .rate {
   margin-right: 25px;
-}
-
-.rate:hover {
-  color: #C29974;
-  cursor: pointer;
 }
 
 /* rating stars */
@@ -436,12 +435,11 @@ input:focus {
 .rating-area:not(:checked)>label {
   float: right;
   width: 16px;
-  padding: 0;
+  padding: 14px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 32px;
   color: lightgrey;
-  text-shadow: 1px 1px #bbb;
 }
 
 .rating-area:not(:checked)>label:before {
@@ -480,7 +478,7 @@ input:focus {
 }
 
 .dl-link {
-  margin-top: 25px;
+  margin-top: 10px;
   margin-left: 115px;
 }
 
