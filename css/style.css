@@ -47,12 +47,13 @@
 }
 
 .slide-info {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-      flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 70%;
   min-width: 311px;
 }
@@ -109,8 +110,7 @@
 
 .slide-img-wrapper {
   position: relative;
-  -webkit-align-self: flex-end;
-    -moz-align-self: flex-end;
+  -ms-flex-item-align: end;
       align-self: flex-end;
   right: 0;
   width: 100%;
@@ -144,6 +144,8 @@
   bottom: 0px;
   margin: 0 auto;
   width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
 
@@ -170,18 +172,19 @@
 }
 
 .products-list {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-      flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .products-list-item {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 20px;
 }
 
@@ -200,7 +203,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .products-list-item-link-text:hover,
@@ -258,12 +263,13 @@
 }
 
 .delivery-info {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-      flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 120px;
 }
 
@@ -284,7 +290,7 @@
   right: 50px;
 }
 
-.delivery-list-item-link:first-child + .delivery-list-item:hover {
+.delivery-list-item-link:first-child+.delivery-list-item:hover {
   font-weight: bold;
 }
 
@@ -375,12 +381,12 @@
 }
 
 .partners-list {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-align-items: center;
-    -moz-align-items: center;
-      align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .partners-list-item {
@@ -399,12 +405,13 @@
 }
 
 .about-us {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-      flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #E1F0F7;
   margin-right: 57px;
   max-width: 543px;
@@ -430,7 +437,7 @@
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
-  
+
 }
 
 .about-info {
@@ -440,6 +447,8 @@
   line-height: 22px;
   color: #1E0606;
   margin-top: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
 
@@ -471,15 +480,18 @@
 /* Contacts */
 
 .contacts {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-      flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   background: #E1F0F7;
   width: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   padding: 30px;
 }
@@ -531,13 +543,17 @@ fieldset {
 
 .contact-form {
   position: fixed;
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 680px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   background: #E5EAF8;
   padding-top: 20px;
@@ -570,6 +586,38 @@ fieldset {
   padding: 20px 11px 14px;
 }
 
+.name-input::-webkit-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.name-input::-moz-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.name-input:-ms-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.name-input::-ms-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
 .name-input::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
@@ -579,12 +627,12 @@ fieldset {
 }
 
 .contact-info {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-      justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -595,12 +643,13 @@ fieldset {
 }
 
 .input-wrap {
-  -webkit-display: flex;
-    -moz-display: flex;
-      display: flex;
-  -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-      flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 15px;
 }
 
