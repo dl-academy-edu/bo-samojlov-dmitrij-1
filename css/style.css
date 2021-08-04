@@ -666,9 +666,9 @@ textarea:disabled {
 }
 
 .close-btn {
-  position: relative;
-  top: 24%;
-  left: 68%;
+  position: absolute;
+  top: 230px;
+  left: 1290px;
   border: none;
   outline: none;
   background: transparent;

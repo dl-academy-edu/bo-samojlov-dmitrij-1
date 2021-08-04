@@ -34,7 +34,7 @@ h1 {
 .breadcrumbs-item:first-child:after,
 .breadcrumbs-item:nth-child(2):after {
   position: absolute;
-  content: url(/img/breadcrumb.svg);
+  content: url(../../../img/breadcrumb.svg);
   right: 15px;
   bottom: 4px;
 }
@@ -308,7 +308,7 @@ fieldset>label {
 }
 
 .product-img {
-  background: url(/img/logo.svg) cente no-repeat;
+  background: url(../../../img/logo.svg) center no-repeat;
 }
 
 h2 {

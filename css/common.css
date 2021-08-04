@@ -502,7 +502,7 @@ img {
   position: absolute;
   top: 1px;
   left: 1px;
-  background: url(../../../img/checkbox_check.svg) #ffffff;
+  background: url(../img/checkbox_check.svg) #ffffff;
   border: 2px solid #C29974;
   border-radius: 3px;
   width: 19px;
