@@ -281,12 +281,12 @@ fieldset>label {
   transform: translate(-50%, -50%);
   padding: 82px 12px 96px 11px;
   background: #CEE5F4;
-  opacity: 1;
+  opacity: 0;
 }
 
 .product-card:focus::after,
 .product-card:hover::after {
-  opacity: 0.9;
+  opacity: 0.8;
   cursor: pointer;
 }
 
