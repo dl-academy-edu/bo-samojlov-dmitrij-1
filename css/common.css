@@ -413,6 +413,16 @@ input:focus {
   margin-right: 25px;
 }
 
+.rating-area:hover+.rate {
+  color: #C29974;
+}
+
+.company-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
 /* rating stars */
 
 .rating-area {
