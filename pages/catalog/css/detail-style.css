@@ -184,6 +184,11 @@ h1 {
 }
 
 .amount-radio-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
   position: relative;
   cursor: pointer;
   padding: 28px 0px 0px 20px;
