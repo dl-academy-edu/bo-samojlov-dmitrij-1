@@ -5,43 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
     rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/common.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>Design Life Kids</title>
 </head>
 
 <body>
 
-  <header>
+  <header class="container mg-wrap">
     <img class="header-logo" src="img/logo.svg" alt="Design Life Kids" width="100" height="52">
     <nav class="header-nav">
       <ul class="header-navigation">
         <li class="header-navigation-item"><a class="header-navigation-link" href="./pages/blog/index.html">Blog</a>
         </li>
         <li class="header-navigation-item"><a class="header-navigation-link"
-            href="./pages/catalog/index.html">Catalog</a></li>
+            href="./pages/catalog/index.html">Catalog</a>
+        </li>
         <li class="header-navigation-item"><a class="header-navigation-link" href="#">About Us</a></li>
       </ul>
     </nav>
     <div class="contact-us">
-      <button class="search-btn" type="button"><img src="img/glass.svg" alt="glass" width="17" height="17"></button>
+      <button class="search-btn" type="button"><img src="./img/glass.svg" alt="glass" width="17" height="17"></button>
       <a class="contact-us-link" href="./pages/contacts/index.html">contact us</a>
     </div>
   </header>
 
   <main>
 
-    <section class="main-theme">
+    <section class="main-theme container mg-main-theme-container">
       <div class="pagination">
-        <p class="slide-counter">01</p>
+        <span class="slide-counter">01</span>
         <ul class="main-theme-menu">
           <li class="main-theme-menu-item">
-            <button class="main-theme-menu-button-head" aria-label="menu-button"></button>
+            <button class="main-theme-menu-button" aria-label="menu-button"></button>
           </li>
           <li class="main-theme-menu-item">
             <button class="main-theme-menu-button" aria-label="menu-button"></button>
@@ -57,208 +59,251 @@
 
       <div class="slider">
         <div class="slide">
-          <h1>the oh noo collection</h1>
-          <img src="img/alien_toy.png" alt="alien toy" width="636" height="489">
-          <p class="design">Designed in Slovenia</p>
-          <button class="explore-btn">explore now</button>
-          <p class="shipping">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+          <div class="slide-info">
+            <h1 class="heading">the ooh noo collection</h1>
+            <span class="design">Designed in Slovenia</span>
+            <button class="explore-btn">explore now</button>
+          </div>
+          <div class="slide-img-wrapper"><img class="slide-img" src="img/alien_toy.png" alt="alien toy" width="636"
+              height="489"></div>
         </div>
-        <div class="slide-heading hidden">
-          <p>the oh noo collection</p>
-          <img src="img/alien_toy.png" alt="alien toy" width="636" height="489">
-          <p class="design">Designed in Slovenia</p>
-          <button class="explore-btn">explore now</button>
-          <p class="shipping">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        <div class="slide hidden">
+          <div class="slide-info">
+            <h1 class="heading">the ooh noo collection</h1>
+            <span class="design">Designed in Slovenia</span>
+            <button class="explore-btn">explore now</button>
+          </div>
+          <div class="slide-img-wrapper"><img class="slide-img" src="img/alien_toy.png" alt="alien toy" width="636"
+              height="489"></div>
         </div>
-        <div class="slide-heading hidden">
-          <p>the oh noo collection</p>
-          <img src="img/alien_toy.png" alt="alien toy" width="636" height="489">
-          <p class="design">Designed in Slovenia</p>
-          <button class="explore-btn">explore now</button>
-          <p class="shipping">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        <div class="slide hidden">
+          <div class="slide-info">
+            <h1 class="heading">the ooh noo collection</h1>
+            <span class="design">Designed in Slovenia</span>
+            <button class="explore-btn">explore now</button>
+          </div>
+          <div class="slide-img-wrapper"><img class="slide-img" src="img/alien_toy.png" alt="alien toy" width="636"
+              height="489"></div>
         </div>
-        <div class="slide-heading hidden">
-          <p>the oh noo collection</p>
-          <img src="img/alien_toy.png" alt="alien toy" width="636" height="489">
-          <p class="design">Designed in Slovenia</p>
-          <button class="explore-btn">explore now</button>
-          <p class="shipping">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        <div class="slide hidden">
+          <div class="slide-info">
+            <h1 class="heading">the ooh noo collection</h1>
+            <span class="design">Designed in Slovenia</span>
+            <button class="explore-btn">explore now</button>
+          </div>
+          <div class="slide-img-wrapper"><img class="slide-img" src="img/alien_toy.png" alt="alien toy" width="636"
+              height="489"></div>
         </div>
+      </div>
+      <span class="shipping">Free (continental) USA shipping on all orders of $100 USD or more!</span>
+    </section>
+
+    <section class="catalog mg-catalog">
+      <h2 class="category-heading">category products</h2>
+      <div class="container">
+        <ul class="products-list">
+          <li class="products-list-item product-img-1"><a class="products-list-item-link" href="#"><img
+                src="img/apparel_kids.png" alt="sweater" width="280" height="270">
+              <span class="products-list-item-link-text">apparel kids</span>
+            </a></li>
+          <li class="products-list-item product-img-2"><a class="products-list-item-link" href="#"><img
+                src="img/holiday_shop.png" alt="holiday-sock" width="280" height="270">
+              <span class="products-list-item-link-text">holiday shop</span>
+            </a></li>
+          <li class="products-list-item product-img-3"><a class="products-list-item-link"
+              href="./pages/catalog/detail.html"><img src="img/toys.png" alt="deer" width="280" height="270">
+              <span class="products-list-item-link-text">toys</span>
+            </a></li>
+          <li class="products-list-item product-img-4"><a class="products-list-item-link" href="#"><img
+                src="img/accessories.png" alt="skater" width="280" height="270">
+              <span class="products-list-item-link-text">accessories</span>
+            </a></li>
+          <li class="products-list-item product-img-5"><a class="products-list-item-link hidden" href="#"><img
+                src="img/sale.png" alt="flamingo" width="280" height="270">
+              <span class="products-list-item-link-text">sale</span>
+            </a></li>
+          <li class="products-list-item product-img-6"><a class="products-list-item-link hidden" href="#"><img
+                src="/img/apparel_adults.png" alt="dress" width="280" height="270">
+              <span class="products-list-item-link-text">apparel adults</span>
+            </a></li>
+        </ul>
+      </div>
+      <div class="catalog-others container">
+        <button type="button" class="arrow-btn"><img class="arrow-img" src="img/left_arrow.svg" alt="arrow" width="25"
+            height="30"></button>
+        <button type="button" class="arrow-btn"><img class="arrow-img" src="img/right_arrow.svg" alt="arrow" width="25"
+            height="30"></button>
+        <p class="product-description">Modern finds for the modern home. Curated goods by unique designers around the
+          world from fashion to
+          furniture for kids and adults.</p>
       </div>
     </section>
 
-    <section class="catalog">
-      <h2>category products</h2>
-      <ul class="products-list">
-        <li class="products-list-item"><a class="products-list-item-link" href="#"><img src="img/apparel_kids.png"
-              alt="sweater" width="280" height="270">
-            <p class="products-list-item-link-text">apparel kids</p>
-          </a></li>
-        <li class="products-list-item"><a class="products-list-item-link" href="#"><img src="img/holiday_shop.png"
-              alt="holiday-sock" width="280" height="270">
-            <p class="products-list-item-link-text">holiday shop</p>
-          </a></li>
-        <li class="products-list-item"><a class="products-list-item-link" href="./pages/catalog/detail.html"><img
-              src="img/toys.png" alt="deer" width="280" height="270">
-            <p class="products-list-item-link-text">toys</p>
-          </a></li>
-        <li class="products-list-item"><a class="products-list-item-link" href="#"><img src="img/accessories.png"
-              alt="skater" width="280" height="270">
-            <p class="products-list-item-link-text">accessories</p>
-          </a></li>
-      </ul>
-      <button type="button" class="arrow-btn"><img src="img/left_arrow.svg" alt="arrow" width="13" height="26"></button>
-      <button type="button" class="arrow-btn"><img src="img/right_arrow.svg" alt="arrow" width="13"
-          height="26"></button>
-      <p class="product-description">Modern finds for the modern home. Curated goods by unique designers around the
-        world from fashion to
-        furniture for kids and adults.</p>
+    <section class="delivery container mg-delivery">
+      <img class="delivery-img" src="img/woman.jpg" alt="woman" width="480" height="559">
+      <div class="delivery-info">
+        <h2 class="delivery-heading">delivery</h2>
+        <ul class="delivery-list">
+          <li class="delivery-list-item"><a class="delivery-list-item-link-active" href="#">Delivery</a></li>
+          <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Guarantee</a></li>
+          <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Credit</a></li>
+        </ul>
+        <p class="delivery-description">Some days i feel like i've been working on dlk my entire life and there are
+          other
+          days that i am completely
+          shocked that four years have flown by. It's simply magical.</p>
+        <p class="delivery-description">What started as an outlet to deal with the traumatic loss of my husband, dlk has
+          now become a truly happy
+          place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+        <button class="learn-btn">learn more</button>
+      </div>
     </section>
 
-    <section class="delivery">
-      <h2>delivery</h2>
-      <img src="img/woman.jpg" alt="woman" width="480" height="559">
-      <ul class="delivery-list">
-        <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Delivery</a></li>
-        <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Guarantee</a></li>
-        <li class="delivery-list-item"><a class="delivery-list-item-link" href="#">Credit</a></li>
-      </ul>
-      <p class="delivery-description">Some days i feel like i've been working on dlk my entire life and there are other
-        days that i am completely
-        shocked that four years have flown by. It's simply magical.</p>
-      <p class="delivery-description">What started as an outlet to deal with the traumatic loss of my husband, dlk has
-        now become a truly happy
-        place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-      <button class="learn-btn">learn more</button>
-    </section>
-
-    <div class="partners">
+    <div class="partners container mg-partners">
       <ul class="partners-list">
-        <li class="partners-list-item"><a href="https://mail.ru/"><img src="img/mail_logo.svg" alt="mail-logo"
-              width="193" height="60"></a></li>
-        <li class="partners-list-item"><a href="https://www.apple.com/"><img src="img/apple_logo.svg" alt="apple-logo"
-              width="179" height="61"></a></li>
-        <li class="partners-list-item"><a href="https://eltex-co.ru/"><img src="img/eltex_logo.svg" alt="eltex-logo"
-              width="216" height="46"></a></li>
-        <li class="partners-list-item"><a href="https://www.owox.ru/"><img src="img/owox_logo.svg" alt="owox-logo"
-              width="211" height="40"></a></li>
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://mail.ru/" target="_blank"><img
+              src="img/mail_logo.svg" alt="mail-logo" width="193" height="60"></a></li>
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://www.apple.com/"
+            target="_blank"><img src="img/apple_logo.svg" alt="apple-logo" width="179" height="61"></a></li>
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://eltex-co.ru/"
+            target="_blank"><img src="img/eltex_logo.svg" alt="eltex-logo" width="216" height="46"></a></li>
+        <li class="partners-list-item"><a class="partners-list-item-link" href="https://www.owox.ru/"
+            target="_blank"><img src="img/owox_logo.svg" alt="owox-logo" width="211" height="40"></a></li>
       </ul>
     </div>
 
-    <section class="about-us">
-      <h2>design life kids</h2>
-      <p class="about-heading">About Us</p>
-      <p class="about-info">Some days i feel like i've been working on dlk my entire life and there are other days that
-        i am completely
-        shocked that four years have flown by. It's simply magical.</p>
-      <button class="buy-btn">buy now</button>
-    </section>
+    <div class="about-and-map container">
+      <section class="about-us">
+        <h2 class="dlk-head">design life kids</h2>
+        <span class="about-heading">About Us</span>
+        <p class="about-info">Some days i feel like i've been working on dlk my entire life and there are other days
+          that
+          i am completely
+          shocked that four years have flown by. It's simply magical.</p>
+        <button class="buy-btn">buy now</button>
+      </section>
 
-    <section class="contacts">
-      <h2>contacts</h2>
-      <p class="contacts-info">Some days i feel like i've been working on dlk my entire life and there are other days
-        that i am completely
-        shocked that four years have flown by. It's simply magical.</p>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4459.839408748485!2d-122.41890623333398!3d37.776382125321575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sro!4v1624273412145!5m2!1sru!2sro"
-          title="map" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </section>
+      <section class="contacts">
+        <h2 class="contact-head">contacts</h2>
+        <p class="contacts-info">Some days i feel like i've been working on dlk my entire life and there are other days
+          that i am completely
+          shocked that four years have flown by. It's simply magical.</p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4459.839408748485!2d-122.41890623333398!3d37.776382125321575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sro!4v1624273412145!5m2!1sru!2sro"
+            title="map" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+    </div>
   </main>
 
   <footer>
-    <section class="footer-nav">
-      <h3>Navigation</h3>
-      <ul class="footer-navigation">
-        <li class="footer-navigation-item"><a href="#">About Us</a></li>
-        <li class="footer-navigation-item"><a href="./pages/blog/index.html">Blog</a></li>
-        <li class="footer-navigation-item"><a href="#">Design Services</a></li>
-        <li class="footer-navigation-item"><a href="#">Featured On</a></li>
-        <li class="footer-navigation-item"><a href="#">2018 Holiday Catalog</a></li>
-        <li class="footer-navigation-item"><a href="#">Shop By Designer</a></li>
-      </ul>
-    </section>
+    <div class="footer-container">
+      <section class="footer-nav">
+        <h3>Navigation</h3>
+        <ul class="footer-navigation">
+          <li class="footer-navigation-item"><a href="#">About Us</a></li>
+          <li class="footer-navigation-item"><a href="./pages/blog/index.html">Blog</a></li>
+          <li class="footer-navigation-item"><a href="#">Design Services</a></li>
+          <li class="footer-navigation-item"><a href="#">Featured On</a></li>
+          <li class="footer-navigation-item"><a href="#">2018 Holiday Catalog</a></li>
+          <li class="footer-navigation-item"><a href="#">Shop By Designer</a></li>
+        </ul>
+      </section>
+      <section class="customer-info">
+        <h3>Customer information</h3>
+        <ul class="footer-additional-list">
+          <li class="footer-additional-list-item"><a href="./pages/contacts/index.html">Contact Us</a></li>
+          <li class="footer-additional-list-item"><a href="#">Sale Exclusions</a></li>
+          <li class="footer-additional-list-item"><a href="#">Shipping & Returns</a></li>
+          <li class="footer-additional-list-item"><a href="#">Terms & Conditions</a></li>
+          <li class="footer-additional-list-item"><a href="#">Privacy Policy</a></li>
+          <li class="footer-additional-list-item"><a href="#">Search</a></li>
+        </ul>
+      </section>
 
-    <section class="customer-info">
-      <h3>Customer information</h3>
-      <ul class="footer-additional-list">
-        <li class="footer-additional-list-item"><a href="./pages/contacts/index.html">Contact Us</a></li>
-        <li class="footer-additional-list-item"><a href="#">Sale Exclusions</a></li>
-        <li class="footer-additional-list-item"><a href="#">Shipping & Returns</a></li>
-        <li class="footer-additional-list-item"><a href="#">Terms & Conditions</a></li>
-        <li class="footer-additional-list-item"><a href="#">Privacy Policy</a></li>
-        <li class="footer-additional-list-item"><a href="#">Search</a></li>
-      </ul>
-    </section>
+      <section class="connect">
+        <h3>Connect</h3>
+        <form class="email-submit" action="#">
+          <label for="email"></label>
+          <input type="text" id="email" placeholder="Email">
+          <button class="join-btn" type="submit">Join</button>
+        </form>
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item"><a href="https://facebook.com/" target="_blank"><img
+                src="img/facebook.svg" alt="facebook" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://twitter.com/" target="_blank"><img src="img/twitter.svg"
+                alt="twitter" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://www.pinterest.ru/" target="_blank"><img
+                src="img/pinterest.svg" alt="pinterest" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://www.instagram.com/" target="_blank"><img
+                src="img/instagram.svg" alt="instagram" width="30" height="30"></a></li>
+        </ul>
+      </section>
 
-    <section class="connect">
-      <h3>Connect</h3>
-      <form action="#">
-        <label for="email"></label>
-        <input type="text" id="email" placeholder="Email">
-        <button class="join-btn" type="submit">Join</button>
-      </form>
-
-      <ul class="footer-social-list">
-        <li class="footer-social-list-item"><a href="https://facebook.com/"><img src="img/facebook.svg" alt="facebook"
-              width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter"
-              width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://www.pinterest.ru/"><img src="img/pinterest.svg"
-              alt="pinterest" width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://www.instagram.com/"><img src="img/instagram.svg"
-              alt="instagram" width="30" height="30"></a></li>
-      </ul>
-    </section>
-
-    <div class="additional-info">
-      <div class="company-rating">
-        <p class="rate">Company Rating</p>
-        <div class="rating-area">
-          <input type="radio" id="star-5" name="rating" value="5">
-          <label for="star-5" title="rating «5»"></label>
-          <input type="radio" id="star-4" name="rating" value="4">
-          <label for="star-4" title="rating «4»"></label>
-          <input type="radio" id="star-3" name="rating" value="3">
-          <label for="star-3" title="rating «3»"></label>
-          <input type="radio" id="star-2" name="rating" value="2">
-          <label for="star-2" title="rating «2»"></label>
-          <input type="radio" id="star-1" name="rating" value="1">
-          <label for="star-1" title="rating «1»"></label>
+      <div class="additional-info">
+        <div class="company-rating">
+          <div class="rating-area">
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5" title="rating «5»"></label>
+            <input type="radio" id="star-4" name="rating" value="4">
+            <label for="star-4" title="rating «4»"></label>
+            <input type="radio" id="star-3" name="rating" value="3">
+            <label for="star-3" title="rating «3»"></label>
+            <input type="radio" id="star-2" name="rating" value="2">
+            <label for="star-2" title="rating «2»"></label>
+            <input type="radio" id="star-1" name="rating" value="1">
+            <label for="star-1" title="rating «1»"></label>
+          </div>
+          <span class="rate">Company Rating</span>
         </div>
+        <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+        <a class="dl-link" href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
       </div>
-      <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
-      <a class="dl-link" href="https://directline.digital/">Web Design — Direct Line Development</a>
     </div>
   </footer>
 
   <!-- modal window -->
-  <div class="popup hidden">
-    <div class="popup-body">
-      <div class="popup-content">
-        <a href="#" class="popup-close"><img src="img/close.svg" alt="close"></a>
-        <form class="popup" name="form" action="#" method="post">
-          <fieldset>
-            <label for="name">Name</label>
-            <input class="input" name="name" type="text" id="name" />
+
+  <div class="popup-wrapper">
+    <form class="contact-form" name="form" action="#" method="post">
+      <fieldset class="main-form">
+        <fieldset class="input-wrap">
+          <label for="name">Name</label>
+          <input placeholder="ivan ivanov" class="input name-input" name="name" type="text" id="name" />
+        </fieldset>
+        <div class="contact-info">
+          <fieldset class="input-wrap">
             <label for="phone">Phone</label>
-            <input class="input" name="phone" type="text" id="phone" />
-            <label for="contact-email">Email</label>
-            <input class="input" name="email" type="text" id="contact-email" />
-            <label for="message">Message</label>
-            <input name="message" type="text" id="message"></input>
-            <input type="checkbox" name="info" id="agree" value="">
-            <label cheked for="agree">By clicking on the button, you
-              consent to the
-              processing
-              of your personal data</label>
-            <button class="submit-btn" type="submit">submit</button>
+            <input class="input contact-input" name="phone" type="text" id="phone" />
           </fieldset>
-        </form>
-      </div>
-    </div>
+          <fieldset class="input-wrap">
+            <label for="contact-email">Email</label>
+            <input class="input contact-input" name="email" type="text" id="contact-email" />
+          </fieldset>
+        </div>
+        <fieldset class="input-wrap">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </fieldset>
+        <fieldset class="input-wrap">
+          <input class="checkbox" checked type="checkbox" name="info" id="agree" value="">
+          <label class="checkbox-label" for="agree">By clicking on the button, you
+            consent to the
+            processing
+            of your personal data</label>
+        </fieldset>
+        <fieldset>
+          <button class="submit-btn" disabled type="submit">submit</button>
+        </fieldset>
+      </fieldset>
+      <a class="close-btn" aria-label="close-button"><img src="img/close.png" width="25" height="25"
+      alt="close"></a>
+    </form>
   </div>
+
+  <script src="js/script.min.js"></script>
 
 </body>
 

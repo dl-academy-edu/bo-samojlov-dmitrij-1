@@ -5,21 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../contacts/css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&display=swap"
     rel="stylesheet">
+  <link href="../../css/normalize.min.css" rel="stylesheet">
+  <link href="../../css/common.min.css" rel="stylesheet">
+  <link href="../contacts/css/style.min.css" rel="stylesheet">
   <title>Contacts</title>
 </head>
 
 <body>
 
-  <header>
-    <a class="logo-link" href="../../index.html"><img src="../../img/logo.svg" alt="Design Life Kids" width="100"
-        height="52"></a>
+  <header class="container mg-wrap">
+    <a href="../../index.html" class="logo-link"><img class="header-logo" src="../../img/logo.svg"
+        alt="Design Life Kids" width="100" height="52"></a>
     <nav class="header-nav">
       <ul class="header-navigation">
         <li class="header-navigation-item"><a class="header-navigation-link" href="../blog/index.html">Blog</a>
@@ -32,113 +33,136 @@
     <div class="contact-us">
       <button class="search-btn" type="button"><img src="../../img/glass.svg" alt="glass" width="17"
           height="17"></button>
-      <span class="active-page">contact us</span>
+      <a class="contact-us-link" href="#">contact us</a>
     </div>
   </header>
 
   <main>
 
-    <section class="heading">
+    <section class="heading container">
       <h1>contact us</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="../../index.html">Home</a></li>
-        <li class="breadcrumbs-item-active">Contact Us</li>
+        <li class="breadcrumbs-item">Contact Us</li>
       </ul>
     </section>
 
-    <form class="contact-form" name="form" action="#" method="post">
-      <fieldset>
-        <label for="name">Name</label>
-        <input class="input" name="name" type="text" id="name" />
-        <label for="phone">Phone</label>
-        <input class="input" name="phone" type="text" id="phone" />
-        <label for="contact-email">Email</label>
-        <input class="input" name="email" type="text" id="contact-email" />
-        <label for="message">Message</label>
-        <input name="message" type="text" id="message"></input>
-        <input checked type="checkbox" name="info" id="agree" value="">
-        <label for="agree">By clicking on the button, you
-          consent to the
-          processing
-          of your personal data</label>
-        <button class="submit-btn" type="submit">submit</button>
-      </fieldset>
-    </form>
 
-    <div class="info">
-      <p class="info-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
-      <p class="info-text">Please use the form to contact us with your needs. Send us a message and we'll respond as
-        soon as possible.
-      </p>
-      <p class="uppercase-text">an expert is waiting to help you!</p>
+    <div class="main-content-wrapper container">
+
+      <form class="contact-form" name="form" action="#" method="post">
+
+        <fieldset class="main-form">
+          <fieldset class="input-wrap">
+            <label for="name">Name</label>
+            <input placeholder="ivan ivanov" class="input name-input" name="name" type="text" id="name" />
+          </fieldset>
+
+          <div class="contact-info">
+            <fieldset class="input-wrap">
+              <label for="phone">Phone</label>
+              <input class="input contact-input" name="phone" type="text" id="phone" />
+            </fieldset>
+
+            <fieldset class="input-wrap">
+              <label for="contact-email">Email</label>
+              <input class="input contact-input" name="email" type="text" id="contact-email" />
+            </fieldset>
+          </div>
+
+          <fieldset class="input-wrap">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <input class="checkbox" checked type="checkbox" name="info" id="agree" value="">
+            <label class="checkbox-label" for="agree">By clicking on the button, you
+              consent to the
+              processing
+              of your personal data</label>
+          </fieldset>
+
+          <fieldset>
+            <button class="submit-btn" type="submit">submit</button>
+          </fieldset>
+        </fieldset>
+
+      </form>
+
+      <div class="info">
+        <p class="info-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="info-text">Please use the form to contact us with your needs. Send us a message and we'll respond as
+          soon as possible.
+        </p>
+        <p class="uppercase-text">an expert is waiting to help you!</p>
+      </div>
     </div>
 
   </main>
 
   <footer>
-    <section class="footer-nav">
-      <h2>Navigation</h2>
-      <ul class="footer-navigation">
-        <li class="footer-navigation-item"><a href="#">About Us</a></li>
-        <li class="footer-navigation-item"><a href="../blog/index.html">Blog</a></li>
-        <li class="footer-navigation-item"><a href="#">Design Services</a></li>
-        <li class="footer-navigation-item"><a href="#">Featured On</a></li>
-        <li class="footer-navigation-item"><a href="#">2018 Holiday Catalog</a></li>
-        <li class="footer-navigation-item"><a href="#">Shop By Designer</a></li>
-      </ul>
-    </section>
+    <div class="footer-container">
+      <section class="footer-nav">
+        <h3>Navigation</h3>
+        <ul class="footer-navigation">
+          <li class="footer-navigation-item"><a href="#">About Us</a></li>
+          <li class="footer-navigation-item"><a href="../blog/index.html">Blog</a></li>
+          <li class="footer-navigation-item"><a href="#">Design Services</a></li>
+          <li class="footer-navigation-item"><a href="#">Featured On</a></li>
+          <li class="footer-navigation-item"><a href="#">2018 Holiday Catalog</a></li>
+          <li class="footer-navigation-item"><a href="#">Shop By Designer</a></li>
+        </ul>
+      </section>
+      <section class="customer-info">
+        <h3>Customer information</h3>
+        <ul class="footer-additional-list">
+          <li class="footer-additional-list-item"><a href="#">Contact Us</a></li>
+          <li class="footer-additional-list-item"><a href="#">Sale Exclusions</a></li>
+          <li class="footer-additional-list-item"><a href="#">Shipping & Returns</a></li>
+          <li class="footer-additional-list-item"><a href="#">Terms & Conditions</a></li>
+          <li class="footer-additional-list-item"><a href="#">Privacy Policy</a></li>
+          <li class="footer-additional-list-item"><a href="#">Search</a></li>
+        </ul>
+      </section>
+      <section class="connect">
+        <h3>Connect</h3>
+        <form class="email-submit" action="#">
+          <label for="email"></label>
+          <input type="text" id="email" placeholder="Email">
+          <button class="join-btn" type="submit">Join</button>
+        </form>
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item"><a href="https://facebook.com/" target="_blank"><img
+                src="../../img/facebook.svg" alt="facebook" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://twitter.com/" target="_blank"><img
+                src="../../img/twitter.svg" alt="twitter" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://www.pinterest.ru/" target="_blank"><img
+                src="../../img/pinterest.svg" alt="pinterest" width="30" height="30"></a></li>
+          <li class="footer-social-list-item"><a href="https://www.instagram.com/" target="_blank"><img
+                src="../../img/instagram.svg" alt="instagram" width="30" height="30"></a></li>
+        </ul>
+      </section>
 
-    <section class="customer-info">
-      <h2>Customer information</h2>
-      <ul class="footer-additional-list">
-        <li class="footer-additional-list-item"><a href="#">Contact Us</a></li>
-        <li class="footer-additional-list-item"><a href="#">Sale Exclusions</a></li>
-        <li class="footer-additional-list-item"><a href="#">Shipping & Returns</a></li>
-        <li class="footer-additional-list-item"><a href="#">Terms & Conditions</a></li>
-        <li class="footer-additional-list-item"><a href="#">Privacy Policy</a></li>
-        <li class="footer-additional-list-item"><a href="#">Search</a></li>
-      </ul>
-    </section>
-
-    <section class="connect">
-      <h2>Connect</h2>
-      <form action="#">
-        <label for="email"></label>
-        <input type="text" id="email" placeholder="Email">
-        <button class="join-btn" type="submit">Join</button>
-      </form>
-
-      <ul class="footer-social-list">
-        <li class="footer-social-list-item"><a href="https://facebook.com/"><img src="../../img/facebook.svg"
-              alt="facebook" width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://twitter.com/"><img src="../../img/twitter.svg"
-              alt="twitter" width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://www.pinterest.ru/"><img src="../../img/pinterest.svg"
-              alt="pinterest" width="30" height="30"></a></li>
-        <li class="footer-social-list-item"><a href="https://www.instagram.com/"><img src="../../img/instagram.svg"
-              alt="instagram" width="30" height="30"></a></li>
-      </ul>
-    </section>
-
-    <div class="additional-info">
-      <div class="company-rating">
-        <span class="rate">Company Rating</span>
-        <div class="rating-area">
-          <input type="radio" id="star-5" name="rating" value="5">
-          <label for="star-5" title="rating «5»"></label>
-          <input type="radio" id="star-4" name="rating" value="4">
-          <label for="star-4" title="rating «4»"></label>
-          <input type="radio" id="star-3" name="rating" value="3">
-          <label for="star-3" title="rating «3»"></label>
-          <input type="radio" id="star-2" name="rating" value="2">
-          <label for="star-2" title="rating «2»"></label>
-          <input type="radio" id="star-1" name="rating" value="1">
-          <label for="star-1" title="rating «1»"></label>
+      <div class="additional-info">
+        <div class="company-rating">
+          <div class="rating-area">
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5" title="rating «5»"></label>
+            <input type="radio" id="star-4" name="rating" value="4">
+            <label for="star-4" title="rating «4»"></label>
+            <input type="radio" id="star-3" name="rating" value="3">
+            <label for="star-3" title="rating «3»"></label>
+            <input type="radio" id="star-2" name="rating" value="2">
+            <label for="star-2" title="rating «2»"></label>
+            <input type="radio" id="star-1" name="rating" value="1">
+            <label for="star-1" title="rating «1»"></label>
+          </div>
+          <span class="rate">Company Rating</span>
         </div>
+        <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+        <a class="dl-link" href="https://directline.digital/" target="_blank">Web Design — Direct Line Development</a>
       </div>
-
-      <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
-      <a class="dl-link" href="https://directline.digital/">Web Design — Direct Line Development</a>
     </div>
   </footer>
 </body>
