@@ -383,13 +383,18 @@ h2 {
   border: none;
   outline: none;
   background: transparent;
+  opacity: 0.5;
 }
 
-.arrow-btn:hover,
-.arrow-btn:focus {
+.arrow-btn:hover, .arrow-btn:focus {
+  opacity: 1;
   cursor: pointer;
 }
 
 .arrow-btn:active {
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+.arrow-btn:disabled {
+  opacity: 0.2;
 }
