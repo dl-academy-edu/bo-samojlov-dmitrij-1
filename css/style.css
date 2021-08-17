@@ -267,7 +267,7 @@
 }
 
 .delivery-list {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 0;
 }
 
@@ -286,7 +286,7 @@
   line-height: 46px;
   text-transform: uppercase;
   color: #1E0606;
-  margin-bottom: -51px;
+  margin-bottom: -40px;
   margin-top: 17px;
 }
 
@@ -500,7 +500,7 @@
           flex-direction: column;
   position: relative;
   background: #E1F0F7;
-  width: 50%;
+  width: 47%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -531,6 +531,10 @@
 .map {
   position: relative;
   margin: 0 4px -140px;
+}
+
+iframe {
+  background: #EDEDEE;
 }
 
 /* modal window */
