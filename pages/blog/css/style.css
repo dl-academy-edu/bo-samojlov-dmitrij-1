@@ -109,8 +109,8 @@ h2 {
   color: #1E0606;
 }
 
-h2:hover,
-h2:focus {
+a:hover>h2,
+a:focus>h2 {
   text-decoration: underline;
 }
 
